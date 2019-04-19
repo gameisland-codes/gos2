@@ -1,0 +1,122 @@
+.footer_main {
+    width: 1070px;
+    height: 578px;
+    background-image: url('/images/footer_main_dmm.png');
+    margin-left: -535px;
+}
+
+.dmm_checkbox_area {
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 360px;
+	height: 50px;
+	bottom: 160px;
+	left: 50%;
+	margin-left: -180px;
+}
+
+.dmm_checkbox_wrapper {
+	font-size: 13px;
+	color: white;
+	text-align: center;
+	margin-top: 17px;
+}
+
+/* ========================= [ #dmm_ntgnavi ] */
+#dmm_ntgnavi {
+    background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/bg_navimain.gif) center center repeat-x;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+#dmm_ntgnavi ul {
+    list-style: none;
+    margin: 2px 0;
+    padding: 0;
+}
+#dmm_ntgnavi ul li {
+    float: left;
+    margin: 0 6px 0 0;
+    line-height: 15px;
+}
+#dmm_ntgnavi ul.navi_left { float: left }
+#dmm_ntgnavi ul.navi_left li > a {
+    display: block;
+    padding: 0 3px 0 8px;
+    text-decoration: none;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+#dmm_ntgnavi ul.navi_left li > a:hover {
+    background: #eee;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+#dmm_ntgnavi ul.navi_left li > a span {
+    display: block;
+    padding: 9px 10px 7px 28px;
+    color: #333;
+    font-weight: bold;
+}
+#dmm_ntgnavi ul.navi_left li.dmm_top img { margin: 8px 5px 8px 0 }
+#dmm_ntgnavi ul.navi_left li.ntg_top span { background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/bg_bt_olgtop.gif) 0 center no-repeat }
+#dmm_ntgnavi ul.navi_left li.ntg_brw span { background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/bg_bt_brows.gif) 0 center no-repeat }
+#dmm_ntgnavi ul.navi_left li.ntg_min span { background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/bg_bt_mini.gif) 0 center no-repeat }
+#dmm_ntgnavi ul.navi_left li.ntg_poi span { background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/bg_bt_point.gif) 0 center no-repeat }
+#dmm_ntgnavi ul.navi_right {
+    float: right;
+    font-size: 10px;
+}
+#dmm_ntgnavi ul.navi_right li {
+    margin: 0 10px 0 0;
+    padding: 8px 5px;
+}
+#dmm_ntgnavi .arrow {
+    padding-left: 14px;
+    background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/arrow_common.gif) no-repeat left center;
+}
+#dmm_ntgnavi .tx-point {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4b4b !important;
+}
+#dmm_ntgnavi p {
+margin: 0;
+line-height:2.6em;
+}
+#dmm_ntgnavi .clear {clear: both;}
+#dmm_ntgnavi .mg-l12 {margin-left: 12px;}
+#dmm_ntgnavi .mg-r12 {margin-right: 12px;}
+#dmm_ntgnavi .pd-t12 {padding-top: 12px;}
+
+#dmm_ntgnavi .arrow:link {
+    color: #000;
+    text-decoration: none;
+}
+
+#dmm_ntgnavi .arrow:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#dmm_ntgnavi .arrow:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#dmm_ntgnavi .arrow:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.mail_slidein_dmm {
+	width: 280px;
+	height: 64px;
+	background-image: url('/images/mail_slidein_dmm.png');
+	background-position: 0 0;
+	bottom: 0;
+	right: -200px;
+	position: absolute;
+	pointer-events: auto;
+}
+

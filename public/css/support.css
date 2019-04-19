@@ -1,0 +1,90 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "メイリオ", "Hiragino Kaku Gothic Pro", Meiryo, "ヒラギノ角ゴ Pro W3", "MS PGothic", "MS UI Gothic", Helvetica, Arial, sans-serif;
+}
+
+img {
+	border: 0;
+}
+
+a,a:link,a:visited,a:hover,a:active {
+	color: #fff; 
+}
+
+.wrapper {
+	width: 1280px;
+	margin: auto;
+}
+
+.text_red {
+	color: red;
+}
+
+.confirm_btn {
+	width: 285px;
+	height: 59px;
+	background-image: url('/images/confirm_btn_off.png');
+	background-size: 285px 59px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.confirm_btn:hover {
+	background-image: url('/images/confirm_btn_on.png');
+}
+
+.inquiry_error_msg {
+	display: none;
+	color: red;
+}
+
+.back_to_top_btn {
+	width: 285px;
+	height: 59px;
+	background-image: url('/images/back_to_top_btn_off.png');
+	background-size: 285px 59px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.back_to_top_btn:hover {
+	background-image: url('/images/back_to_top_btn_on.png');
+}
+
+.fs11 {
+	font-size: 11px;
+}
+
+footer {
+	width: 100%;
+	position: relative;
+}
+
+.footer_texts {
+	margin-top: 40px;
+	background-color: #10243C;
+	width: 100%;
+	color: white;
+	height: 250px;
+	position: relative;
+}
+
+.footer_links {
+	width: 1280px;
+	height: 80px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	padding-top: 20px;
+	margin: auto;
+}
+
+.copyright_area {
+	padding-top: 20px;
+	max-width: 600px;
+	height: 80px;
+	margin: auto;
+	text-align: center;
+}

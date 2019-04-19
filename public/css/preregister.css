@@ -1,0 +1,54 @@
+.wrapper {
+	margin: 20px;
+}
+
+form {
+	height: 50px;
+}
+
+.register_btn {
+	width: 285px;
+	height: 59px;
+	background-image: url('/images/register_btn_off.png');
+	background-size: 285px 59px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.register_btn:hover {
+	background-image: url('/images/register_btn_on.png');
+}
+
+#email_error {
+	display: none;
+	color: #ff0000;
+}
+
+.input_area {
+	text-align: center;
+}
+
+.copy_btn {
+	width: 285px;
+	height: 59px;
+	background-image: url('/images/copy_btn_off.png');
+	background-size: 285px 59px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.copy_btn:hover {
+	background-image: url('/images/copy_btn_on.png');
+}
+
+.twitter_btn {
+	cursor: pointer;
+	margin: auto;
+	width: 170px;
+}
+
+.email_btn {
+	cursor: pointer;
+	margin: auto;
+	width: 170px;
+}
