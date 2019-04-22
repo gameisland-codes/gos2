@@ -16,6 +16,7 @@ a,a:link,a:visited,a:hover,a:active {
 .wrapper {
 	width: 1280px;
 	margin: auto;
+	padding-top: 30px;
 }
 
 .text_red {

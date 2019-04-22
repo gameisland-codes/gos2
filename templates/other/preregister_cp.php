@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<title>事前登録キャンペーン</title>
 
-	<link rel="stylesheet" type="text/css" href="/css/other/preregister_cp.css<?php echo '?'.time() ?>">
+	<link rel="stylesheet" type="text/css" href="/css/other/preregister_cp.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>

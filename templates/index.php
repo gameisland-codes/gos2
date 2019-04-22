@@ -41,27 +41,29 @@
 			</div>
 		</div>
 
-		<?php include('vendor/indexContents.php') ?>
-
-		<?php include('vendor/footer.php') ?>
-
-		<?php include('vendor/floatArea.php') ?>
+		<?php
+			$platform = 'official';
+			include('vendor/indexContents.php');
+			include('vendor/footer.php');
+			include('vendor/floatArea.php');
+		?>
 	</div>
-<script src="//platform.gameisland.co.jp/js/public/messenger.js" type="text/javascript"></script>
-<script type="text/javascript">
-var messenger = new Messenger('parentMT', 'gos2');
-messenger.listen(function(msg){
-	layer.closeAll();
-	layer.open({
-		type: 2,
-		title: false,
-		skin: 'layui-layer-none',
-		area: ['800px', '600px'],
-		closeBtn: true,
-		shadeClose: false,
-		content: msg,
-	});
-});
-</script>
+
+	<script src="//platform.gameisland.co.jp/js/public/messenger.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var messenger = new Messenger('parentMT', 'gos2');
+		messenger.listen(function(msg){
+				layer.closeAll();
+				layer.open({
+				type: 2,
+				title: false,
+				skin: 'layui-layer-none',
+				area: ['800px', '600px'],
+				closeBtn: true,
+				shadeClose: false,
+				content: msg,
+			});
+		});
+	</script>
 </body>
 </html>

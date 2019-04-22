@@ -21,6 +21,11 @@ chmod 777 logs
 chmod 777 tmp
 ~~~
 
+If you fetch from git
+~~~
+composer install
+~~~
+
 login mysql with root
 
 SQL:
@@ -102,6 +107,9 @@ server {
 
 # Other
 Framework: Slim
+
+Doc: http://www.slimframework.com/docs/
+
 |Item|dir|
 ----|----
 |Version Detail|./comporser.json|
@@ -111,3 +119,38 @@ Framework: Slim
 |Controller|./app/*|
 |Assets(images/css/js/videos/sounds)|./public/*|
 |Plugins|./vendor/*|
+
+* ### DMM resource
+
+./src/routes.php
+
+./templates/dmm.php
+
+./public/*
+
+* ### Campaign Page
+
+./src/routes.php
+
+./templates/other/preregister_cp.php
+
+./public/css/other/preregister_cp.css
+
+./public/images/preregister_cp/*
+
+* ### If you need new controller
+
+Add 
+~~~
+$container['NewController'] = function ($c) {
+    require (__DIR__ . '/../app/NewController.php');
+    return new App\NewController($c);
+};
+~~~
+To
+
+./src/dependencies.php
+
+And
+
+Make "NewController.php" On ./app/

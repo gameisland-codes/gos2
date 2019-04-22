@@ -57,12 +57,12 @@
 			var subject=encodeURIComponent('ワンフィンガーシューティングRPG『Guns of Soul2（GOS2）』の事前登録のご紹介');
 			var body=encodeURIComponent(
 				'ワンフィンガーシューティングRPG『Guns of Soul2（GOS2）』の事前登録キャンペーンをスタート！\n'+
-				'100憶金貨山分け、登録数に応じて豪華アイテムをプレゼント！\n'+
+				'100億金貨山分け、登録数に応じて豪華アイテムをプレゼント！\n'+
 				'まだの人は今すぐ登録！'
 			);
 			$('.email_btn a').attr('href','mailto:?subject='+subject+'&body='+body);
 
-			var text=encodeURIComponent('ワンフィンガーシューティングRPG『Guns of Soul2（GOS2）』の事前登録に参加したよ！\n100憶金貨山分け、登録数に応じて豪華アイテムをプレゼント！');
+			var text=encodeURIComponent('ワンフィンガーシューティングRPG『Guns of Soul2（GOS2）』の事前登録に参加したよ！\n100億金貨山分け、登録数に応じて豪華アイテムをプレゼント！');
 			var hashtags='';//encodeURIComponent('---,---');
 			$('.twitter_btn').on('click',function(){
 				window.open(
