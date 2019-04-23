@@ -27,7 +27,7 @@
 				<div class="main_frame">
 					<div class="article_area">
 						<div class="article_body">
-							
+
 							TODO
 
 							This is <?php echo $article; ?> article.

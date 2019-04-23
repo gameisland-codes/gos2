@@ -66,7 +66,7 @@ a,a:link,a:visited,a:hover,a:active {
 }
 
 .tab_frame.active {
-	background-image: url('/images/news_tab_frame_on.png');	
+	background-image: url('/images/news_tab_frame_on.png');
 }
 
 .chars_frame {

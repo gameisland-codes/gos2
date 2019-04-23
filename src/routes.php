@@ -65,6 +65,18 @@ if ( $host == 'dmg.gos2.jp' ) {
 			'article' => isset($args['article']) ? $args['article'] : '',
 		]);
 	});
+
+	$app->get('/preregister/complate', function($request, $response){
+		return $this->renderer->render($response, 'preregister/complateDmm.php');
+	});
+
+	$app->get('/preregister/duplicate', function($request, $response){
+		return $this->renderer->render($response, 'preregister/duplicateDmm.php');
+	});
+
+	$app->get('/preregister/error', function($request, $response){
+		return $this->renderer->render($response, 'preregister/errorDmm.php');
+	});
 }
 
 /* /////////////////////

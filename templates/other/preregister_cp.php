@@ -9,8 +9,44 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="/js/layer.js"></script>
+
+	<?php if ($platform == 'dmm'): ?>
+
+		<script src="/js/dmm.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/dmm_nav.css">
+		<style type="text/css">
+			.dmm_checkbox_area {
+				background-color: rgba(0,0,0,0.5);
+				position: absolute;
+				width: 360px;
+				height: 50px;
+				top: -205px;
+				left: 50%;
+				margin-left: -180px;
+			}
+
+			.dmm_checkbox_wrapper {
+				font-size: 13px;
+				color: white;
+				text-align: center;
+				margin-top: 17px;
+			}
+		</style>
+
+	<?php endif; ?>
+
 </head>
 <body>
+
+	<?php if ($platform == 'dmm'): ?>
+
+		<?php
+			include(__DIR__ . '/../adTag/dmm_gtm.php');
+			include(__DIR__ . '/../vendor/dmm_nav.php');
+		?>
+
+	<?php endif; ?>
+
 	<div class="wrapper">
 		<div class="top_area">
 			<div class="anim_area">
@@ -31,10 +67,29 @@
 		</div>
 		<div class="bg_pattern_top"></div>
 		<div class="contents_wrapper">
-			<div class="preregister_btn_top"></div>
-			<div class="cp_contents_1"></div>
-			<div class="cp_contents_2"></div>
-			<div class="preregister_btn"></div>
+
+			<?php if ($platform == 'dmm'): ?>
+
+				<div class="dmm_checkbox_area">
+					<div class="dmm_checkbox_wrapper">
+						<input type="checkbox" id="preRegPram1" name="preRegPram1" value="1" checked="checked">お知らせを受け取る
+						<input type="checkbox" id="preRegPram2" name="preRegPram2" value="1" checked="checked">プロフィール等に表示する
+					</div>
+				</div>
+				<div class="preregister_btn_top"></div>
+				<div class="cp_contents_1"></div>
+				<div class="cp_contents_dmm"></div>
+				<div class="preregister_btn"></div>
+
+			<?php else: ?>
+
+				<div class="preregister_btn_top"></div>
+				<div class="cp_contents_1"></div>
+				<div class="cp_contents_2"></div>
+				<div class="preregister_btn"></div>
+
+			<?php endif; ?>
+
 		</div>
 		<div class="bg_pattern_bottom"></div>
 	</div>
@@ -79,7 +134,7 @@
 		<?php if ($platform == 'dmm'): ?>
 
 			function openPreregister () {
-				//TODO
+				openPreregisterModal();
 			}
 
 		<?php else: ?>

@@ -30,12 +30,12 @@ login mysql with root
 
 SQL:
 ~~~
-CREATE DATABASE official_gos;
+CREATE DATABASE gos2;
 
-grant all privileges on official_gos.* to official_gos@'localhost' identified by 'WjrPSRssiebVbh7G';
+grant all privileges on gos2.* to gos2@'localhost' identified by 'WjrPSRssiebVbh7G';
 FLUSH PRIVILEGES;
 
-use official_gos;
+use gos2;
 
 CREATE TABLE `preregisterUsers` (
   `id` int(8) NOT NULL AUTO_INCREMENT,
@@ -46,7 +46,7 @@ CREATE TABLE `preregisterUsers` (
   KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ~~~
-next login (mysql -uofficial_gos -pWjrPSRssiebVbh7G official_gos)
+next login (mysql -uofficial_gos -pWjrPSRssiebVbh7G gos2)
 
 # Nginx (Accessport Test Server)
 ~~~
