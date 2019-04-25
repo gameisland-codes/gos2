@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="/css/support.css">
 </head>
 <body>
+
+	<?php if(PLATFORM == 'dmm') { include(__DIR__ . '/../adTag/dmm_gtm.php'); } ?>
+
 	<div class="wrapper">
 		<img src="/images/title_terms.png" width="100%">
 		<div>

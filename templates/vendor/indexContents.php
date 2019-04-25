@@ -1,8 +1,49 @@
+		<div class="top">
+			<video preload="metadata" autoplay loop muted class="video_bg">
+				<source src="videos/top.mp4" type="video/mp4">
+				<source src="videos/top.webm" type="video/webm">
+			</video>
+			<div class="top_bg">
+				<div class="top_chars_left"></div>
+				<div class="top_chars_right"></div>
+				<div class="top_frame"></div>
+				<div class="top_contents">
+					<nav>
+						<a href="#">Top</a>
+						<a href="#news">News</a>
+						<a href="#story">Story</a>
+						<a href="#character">Character</a>
+						<a href="#system">System</a>
+						<!-- <div class="menu_pointer"></div> -->
+					</nav>
+					<div class="logo"></div>
+
+					<?php if (PLATFORM == 'dmm'): ?>
+						<!--
+						<div class="dmm_checkbox_area">
+							<div class="dmm_checkbox_wrapper">
+								<input type="checkbox" id="preRegPram1" name="preRegPram1" value="1" checked="checked">お知らせを受け取る
+								<input type="checkbox" id="preRegPram2" name="preRegPram2" value="1" checked="checked">プロフィール等に表示する
+							</div>
+						</div>
+						-->
+						<div class="game_start_btn"></div>
+					<?php else: ?>
+
+						<div class="download_btns">
+							<a href="https://itunes.apple.com/jp/app/id1453626249" target="_blank" class="app_store_btn"></a>
+							<a href="https://play.google.com/store/apps/details?id=jp.gos2.gunsofsoul2" target="_blank" class="google_play_btn"></a>
+						</div>
+
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
 		<div class="contents_wrapper">
 			<div class="banner_area">
 				<div class="banners">
 
-					<?php if($platform == 'dmm'): ?>
+					<?php if(PLATFORM == 'dmm'): ?>
 
 						<img src="/images/preregister_cp_banner_dmm.jpg">
 
@@ -17,8 +58,11 @@
 				<div class="banner_clicker"></div>
 			</div>
 			<div class="movie_area">
-				<div class="movie_frame">
-					<div class="movie_play_btn"></div>
+				<div class="movie_wrapper">
+					<div class="movie_thumbnail"></div>
+					<div class="movie_frame">
+						<div class="movie_play_btn"></div>
+					</div>
 				</div>
 			</div>
 			<div id="news">
@@ -60,7 +104,7 @@
 								</div>
 								<div class="news_date">2019.05.01</div>
 							</div>
-							<!-- <iframe src="//cms.gameisland.co.jp/gos2/<?php echo $platform; ?>/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe> -->
+							<!-- <iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe> -->
 						</div>
 						<a href="/news" target="_blank" class="news_more_btn"></a>
 					</div>
@@ -132,5 +176,13 @@
 						<div class="system_right_btn"></div>
 					</div>
 				</div>
+
+				<?php if(PLATFORM == 'dmm'): ?>
+
+					<div class="bottom_game_start_btn">
+						<div class="game_start_btn"></div>
+					</div>
+
+				<?php endif; ?>
 			</div>
 		</div>

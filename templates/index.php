@@ -8,41 +8,17 @@
 	<meta name="keywords" content="gos2" />
 	<meta name="description" content="ガンズオブソウル2（GOS2）「ガンズオブソウル2（Guns of Soul2）」。公式サイト." />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css?190425">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="/js/scrollreveal.min.js"></script>
+	<script src="/js/howler.min.js"></script>
 	<script src="/js/layer.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/js/main.js?190425"></script>
 </head>
 <body>
 	<div class="fixed_bg">
-		<div class="top">
-			<video preload="metadata" autoplay loop muted class="video_bg">
-				<source src="videos/top.mp4" type="video/mp4">
-				<source src="videos/top.webm" type="video/webm">
-			</video>
-			<div class="top_bg">
-				<div class="top_chars_left"></div>
-				<div class="top_chars_right"></div>
-				<div class="top_frame"></div>
-				<div class="top_contents">
-					<nav>
-						<a href="#">Top</a>
-						<a href="#news">News</a>
-						<a href="#story">Story</a>
-						<a href="#character">Character</a>
-						<a href="#system">System</a>
-						<!-- <div class="menu_pointer"></div> -->
-					</nav>
-					<div class="logo"></div>
-					<div class="preregister_btn"></div>
-				</div>
-			</div>
-		</div>
-
 		<?php
-			$platform = 'official';
 			include('vendor/indexContents.php');
 			include('vendor/footer.php');
 			include('vendor/floatArea.php');

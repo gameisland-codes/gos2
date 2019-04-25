@@ -23,7 +23,7 @@ a,a:link,a:visited,a:hover,a:active {
 
 .main_contents {
 	width: 1280px;
-	height: 1729px;
+	height: 1480px;
 	background-image: url('/images/news_bg.png');
 	margin-top: -50px;
 }
@@ -71,8 +71,6 @@ a,a:link,a:visited,a:hover,a:active {
 
 .chars_frame {
 	width: 1280px;
-	/*height: 1061px;*/
-	height: 1440px;
 	position: absolute;
 	top: 317px;
 	left: 50%;

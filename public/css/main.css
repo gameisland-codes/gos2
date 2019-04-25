@@ -41,7 +41,7 @@ a,a:link,a:visited,a:hover,a:active {
 	height: 773px;
 	background-image: url('/images/top_bg.png');
 	position: relative;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	width: 100%;
 	background-size: 100% 775px;
 	overflow: hidden;
@@ -113,7 +113,6 @@ nav a:hover {
 	height: 194px;
 	background-image: url('/images/logo.png');
 	margin: auto;
-	margin-bottom: 350px;
 }
 
 .preregister_btn {
@@ -126,6 +125,50 @@ nav a:hover {
 
 .preregister_btn:hover {
 	background-image: url('/images/preregister_btn_on.png');
+}
+
+.game_start_btn {
+	width: 346px;
+	height: 99px;
+	background-image: url('/images/game_start_btn_off.png');
+	cursor: pointer;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -173px;
+}
+
+.game_start_btn:hover {
+	background-image: url('/images/game_start_btn_on.png');
+}
+
+.bottom_game_start_btn {
+	position: relative;
+	width: 1280px;
+	height: 200px;
+}
+
+.download_btns {
+	margin: auto;
+	margin-top: 167px;
+	width: 600px;
+}
+
+.app_store_btn {
+	width: 237px;
+	height: 71px;
+	background-image: url('/images/app_store_btn.png');
+	cursor: pointer;
+	display: inline-block;
+}
+
+.google_play_btn {
+	width: 237px;
+	height: 71px;
+	background-image: url('/images/google_play_btn.png');
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 120px;
 }
 
 /*-------------------------------------------------*/
@@ -172,14 +215,28 @@ nav a:hover {
 	height: 380px;
 }
 
+.movie_wrapper {
+	width: 478px;
+	height: 308px;
+	margin: auto;
+	position: relative;
+}
+
+.movie_thumbnail {
+	position: absolute;
+	width: 478px;
+	height: 308px;
+	background-image: url('/images/thumbnail_190423.png');
+}
+
 .movie_frame {
+	position: relative;
 	width: 478px;
 	height: 308px;
 	background-image: url('/images/movie_frame.png');
-	margin: auto;
+	background-repeat: no-repeat;
 	margin-top: 10px;
 	padding-top: 110px;
-    background-repeat: no-repeat;
 }
 
 .movie_play_btn {
@@ -187,7 +244,7 @@ nav a:hover {
 	height: 84px;
 	background-image: url('/images/movie_play_btn.png');
 	margin: auto;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 /* ---------------------------------------------------------------------------- News Start */

@@ -29,3 +29,18 @@ function openPreregisterModal () {
 
     });
 }
+
+$(function(){
+    $('.dmm_gamestart_btn, .game_start_btn').on('click', function(){
+        layer.closeAll();
+        layer.open({
+            type: 2,
+            title: false,
+            skin: 'layui-layer-none',
+            area: ['600px', '320px'],
+            closeBtn: true,
+            shadeClose: true,
+            content: '/gamestart',
+        });
+    });
+});

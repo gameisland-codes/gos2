@@ -22,6 +22,17 @@
 	margin-top: 17px;
 }
 
+.dmm_gamestart_btn {
+    width: 334px;
+    height: 100px;
+    background-image: url('/images/dmm_gamestart_btn.png');
+    cursor: pointer;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -167px;
+}
+
 /* ========================= [ #dmm_ntgnavi ] */
 #dmm_ntgnavi {
     background: url(//ap-statics.loas.jp/mm2/platform/images/dmm/bg_navimain.gif) center center repeat-x;

@@ -154,3 +154,8 @@ To
 And
 
 Make "NewController.php" On ./app/
+
+* ### Git Clone
+~~~
+git clone git@github.com:gameisland-codes/gos2.git
+~~~

@@ -1,16 +1,15 @@
-var __curCharNum=1;
 var __charInfo = {
-	1: {name:'ラビ',attr:1,introPage:1,introText:['トーア（オランド）と共に部隊に新たに配属された副官。<br>任務においてオペレーター役をこなし、任務中のあらゆる場所でトーアたちを応援サポートしている。']},
-	2: {name:'シェリー',attr:2,introPage:2,introText:['先天的に感知能力を持つ、偵察を始め、索敵などを担当する。<br>科学的に解明されないレベルでの能力であり、保護命令が出ているが、稀に戦場に現れる。','能力の関係か、俗世離れしており無知。<br>情報の善悪を見定めることができず、騙されやすいのでAIに頼ることで日々生活している。']},
-	3: {name:'エミ',attr:2,introPage:2,introText:['少女でありながら機械工学において優秀な実績をもつ現状世界一の科学者でもある。<br>実際に軍の施設や作戦で用いられる兵器、設備は彼女の開発製品であるものがほとんど。自らの作り出した決戦兵器を従え戦場を蹂躙する。','およそ年頃らしくない振る舞いで下を見下す傾向にある。<br>日本支部からやってきた理由はシスネの扱う[RRアイギス]のためでもある。']},
-	4: {name:'アン',attr:2,introPage:1,introText:['新規部隊の一番下っ端として配属された少女。記憶喪失を患っており、ここ最近までのデータを持たない。潜在能力は高いのだがその扱い方を知る由はないようだ。<br>気弱ながらにも自らを奮い立たせるような気概をもつ。']},
-	5: {name:'マリー',attr:2,introPage:1,introText:['前線で活躍中の女性兵。<br>美人で非常に優秀な兵士だが、それを鼻にかけない立ち居振る舞いが人気。<br>よく男性から告白をされ対処に困っている。']},
-	6: {name:'トーア',attr:3,introPage:1,introText:['新規に配属された女性兵士。志願兵の一人。自宅がエイリアンの襲撃に巻き込まれ、家族を全て失った経緯から兵士となることを希望した。<br>復讐心からか上昇志向が極めて高い。']},
-	7: {name:'オランド',attr:3,introPage:1,introText:['新規に配属された男性兵士。<br>学問を理由に徴兵制をのらりくらりかわしてきたが、ようやく観念した。真に世界を救おうとは考えておらず、場を盛り上げはするが実績がないため頼りなく思われている。']},
-	8: {name:'シリウス',attr:3,introPage:2,introText:['ヴァルキリーシステムの実験体にして最高傑作。体の一部を機械化しておりおよそ人間離れした身体能力を持つため、銃撃が主体の戦いにおいて近接戦闘も可能。','またカロットという伝説のサイボーグ兵に救われ既に引退した彼の最強のスキルをインストールされている。<br>規律第一のアッシュとは事あるごとに対立している様が見られ、もはや風物詩と化している。']},
-	9: {name:'アッシュ',attr:3,introPage:2,introText:['軍のエリートにして幹部。硝煙の女神とも称される。冷静に戦局を見極める判断能力と他に類を見ない射撃能力の高さが物語るように、前線においてはリーサルウェポンとも言われる。','軍規や作戦に則って行動をしないシリウスを扱いづらい存在として毛嫌いし、注意忠告を行うがあしらわれている。']},
-	10:{name:'カメリア',attr:3,introPage:1,introText:['前線でバリバリ活躍中の女性兵。<br>暗くなりがちな前線基地での華として明るく振る舞っている節があるが、根も明るい。']},
-	11:{name:'ライナー',attr:4,introPage:1,introText:['軍では珍しい既婚者の男性。<br>娘が一人おり、ホームで帰りを待つ妻子のため、絶対に死なないという強い覚悟を持っている。自分や仲間には厳しい意見も言うが、たまの休みは妻子のために使うマイホームパパでもある。']},
+	 1:{id: 1,attr:1,introPage:1,name:'ラビ',introText:['トーア（オランド）と共に部隊に新たに配属された副官。<br>任務においてオペレーター役をこなし、任務中のあらゆる場所でトーアたちを応援サポートしている。']},
+	 2:{id: 2,attr:2,introPage:2,name:'シェリー',introText:['先天的に感知能力を持つ、偵察を始め、索敵などを担当する。<br>科学的に解明されないレベルでの能力であり、保護命令が出ているが、稀に戦場に現れる。','能力の関係か、俗世離れしており無知。<br>情報の善悪を見定めることができず、騙されやすいのでAIに頼ることで日々生活している。']},
+	 3:{id: 3,attr:2,introPage:2,name:'エミ',introText:['少女でありながら機械工学において優秀な実績をもつ現状世界一の科学者でもある。<br>実際に軍の施設や作戦で用いられる兵器、設備は彼女の開発製品であるものがほとんど。自らの作り出した決戦兵器を従え戦場を蹂躙する。','およそ年頃らしくない振る舞いで下を見下す傾向にある。<br>日本支部からやってきた理由はシスネの扱う[RRアイギス]のためでもある。']},
+	 4:{id: 4,attr:2,introPage:1,name:'アン',introText:['新規部隊の一番下っ端として配属された少女。記憶喪失を患っており、ここ最近までのデータを持たない。潜在能力は高いのだがその扱い方を知る由はないようだ。<br>気弱ながらにも自らを奮い立たせるような気概をもつ。']},
+	 5:{id: 5,attr:2,introPage:1,name:'マリー',introText:['前線で活躍中の女性兵。<br>美人で非常に優秀な兵士だが、それを鼻にかけない立ち居振る舞いが人気。<br>よく男性から告白をされ対処に困っている。']},
+	 6:{id: 6,attr:3,introPage:1,name:'トーア',introText:['新規に配属された女性兵士。志願兵の一人。自宅がエイリアンの襲撃に巻き込まれ、家族を全て失った経緯から兵士となることを希望した。<br>復讐心からか上昇志向が極めて高い。']},
+	 7:{id: 7,attr:3,introPage:1,name:'オランド',introText:['新規に配属された男性兵士。<br>学問を理由に徴兵制をのらりくらりかわしてきたが、ようやく観念した。真に世界を救おうとは考えておらず、場を盛り上げはするが実績がないため頼りなく思われている。']},
+	 8:{id: 8,attr:3,introPage:2,name:'シリウス',introText:['ヴァルキリーシステムの実験体にして最高傑作。体の一部を機械化しておりおよそ人間離れした身体能力を持つため、銃撃が主体の戦いにおいて近接戦闘も可能。','またカロットという伝説のサイボーグ兵に救われ既に引退した彼の最強のスキルをインストールされている。<br>規律第一のアッシュとは事あるごとに対立している様が見られ、もはや風物詩と化している。']},
+	 9:{id: 9,attr:3,introPage:2,name:'アッシュ',introText:['軍のエリートにして幹部。硝煙の女神とも称される。冷静に戦局を見極める判断能力と他に類を見ない射撃能力の高さが物語るように、前線においてはリーサルウェポンとも言われる。','軍規や作戦に則って行動をしないシリウスを扱いづらい存在として毛嫌いし、注意忠告を行うがあしらわれている。']},
+	10:{id:10,attr:3,introPage:1,name:'カメリア',introText:['前線でバリバリ活躍中の女性兵。<br>暗くなりがちな前線基地での華として明るく振る舞っている節があるが、根も明るい。']},
+	11:{id:11,attr:4,introPage:1,name:'ライナー',introText:['軍では珍しい既婚者の男性。<br>娘が一人おり、ホームで帰りを待つ妻子のため、絶対に死なないという強い覚悟を持っている。自分や仲間には厳しい意見も言うが、たまの休みは妻子のために使うマイホームパパでもある。']},
 };
 var __curCharLength=Object.keys(__charInfo).length;
 
@@ -30,7 +29,7 @@ function genChars(){
 	for(var k in __charInfo){
 		var info=__charInfo[k];
 		e+='<div class="swiper-slide">'+
-				'<div class="char_wrapper char_'+k+'">'+
+				'<div class="char_wrapper char_'+info.id+'">'+
 					'<div class="voice_btns">'+
 						'<div class="voice_btn_1"></div>'+
 						'<div class="voice_btn_2"></div>'+
@@ -46,9 +45,9 @@ function genChars(){
 						'<div class="char_label"></div>'+
 					'</div>'+
 					'<div class="detail_bg_'+info.attr+'">'+
-						'<div class="char_name"><img src="/images/chars/char_name_'+k+'.png"></div>'+
-						'<div class="char_cv"><img src="/images/chars/cv_'+k+'.png"></div>'+
-						genIntro(k,info.introPage,info.introText[0])+
+						'<div class="char_name"><img src="/images/chars/char_name_'+info.id+'.png"></div>'+
+						'<div class="char_cv"><img src="/images/chars/cv_'+info.id+'.png"></div>'+
+						genIntro(info.id,info.introPage,info.introText[0])+
 					'</div>'+
 				'</div>'+
 			'</div>';
@@ -102,35 +101,49 @@ function genCharSwiper(){
 			slidesPerView: 1,
 			paginationClickable: true,
 			speed: 800,
+			allowTouchMove: false,
 			on:{
 				slidePrevTransitionEnd:slidePrevTransitionEnd,
 				slideNextTransitionEnd:slideNextTransitionEnd,
+				init:function(){
+					$('.voice_btn_1').on('click', function(){
+						playCharVoice(1);
+					});
+
+					$('.voice_btn_2').on('click', function(){
+						playCharVoice(2);
+					});
+
+					$('.voice_btn_3').on('click', function(){
+						playCharVoice(3);
+					});
+				},
 			}
 		});
 	},1500);
 }
 
+var __curCharNum = 0;
 function slidePrevTransitionEnd(){
 	var preChar=__curCharNum==1?__curCharLength:__curCharNum-1;
-	hideCharAnim(preChar);
-	var prePreChar=preChar==1?__curCharLength:preChar-1;
-	showCharAnim(prePreChar);
+	hideCharAnim(__curCharNum);
+	showCharAnim(preChar);
 
-	__curCharNum=prePreChar+1;
-	if(__curCharNum>__curCharLength){
-		__curCharNum=1;
+	__curCharNum--;
+	if(__curCharNum==0){
+		__curCharNum=__curCharLength;
 	}
 }
 
 function slideNextTransitionEnd(){
-	var preChar=__curCharNum==1?__curCharLength:__curCharNum-1;
-	hideCharAnim(preChar);
-	showCharAnim(__curCharNum);
-
 	__curCharNum++;
 	if(__curCharNum>__curCharLength){
 		__curCharNum=1;
 	}
+
+	var preChar=__curCharNum==1?__curCharLength:__curCharNum-1;
+	hideCharAnim(preChar);
+	showCharAnim(__curCharNum);
 }
 
 function hideCharAnim(charNum){
@@ -364,4 +377,17 @@ function loadTwitterTimeLine(){
 			}
 		}(document, "script", "twitter-wjs");
 	},1e3);
+}
+
+var __soundObj = null;
+function playCharVoice (voiceNum) {
+	if (__soundObj)
+		__soundObj.unload();
+
+	__soundObj = new Howl({
+		src: ['/sounds/chars/'+__curCharNum+'_'+voiceNum+'.wav'],
+		volume: .5,
+	});
+
+	__soundObj.play();
 }
