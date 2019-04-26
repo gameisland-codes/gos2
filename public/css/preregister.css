@@ -6,6 +6,10 @@ form {
 	height: 50px;
 }
 
+input {
+	border: 2px black double;
+}
+
 .register_btn {
 	width: 285px;
 	height: 59px;
