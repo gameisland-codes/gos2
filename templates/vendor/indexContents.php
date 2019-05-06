@@ -24,7 +24,7 @@
 			<div id="news">
 				<div class="news_wrapper">
 					<div class="news_list">
-						<iframe src="//cms.gameisland.co.jp/gos2/<?php echo $platform; ?>/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe>
+						<iframe src="//cms.gameisland.co.jp/gos2/<?php echo $platform; ?>/top_news_v2.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe>
 						<a href="/news" target="_blank" class="news_more_btn"></a>
 					</div>
 					<div class="twitter_timeline">
