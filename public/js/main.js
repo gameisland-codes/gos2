@@ -211,7 +211,7 @@ var __sliderInfo = {
 	duration: 500,
 	upperSystemCard: 1,
 	lowerSystemCard: 2,
-	cardCount: 6,
+	cardCount: 7,
 	isPlaying: false,
 };
 

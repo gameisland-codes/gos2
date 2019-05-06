@@ -1,0 +1,264 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "メイリオ", "Hiragino Kaku Gothic Pro", Meiryo, "ヒラギノ角ゴ Pro W3", "MS PGothic", "MS UI Gothic", Helvetica, Arial, sans-serif;
+	color: #6083BE;
+}
+
+img {
+	border: 0;
+}
+
+a,a:link,a:visited,a:hover,a:active {
+	color: #6083BE;
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 1280px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.main_contents {
+	width: 1280px;
+	height: 1729px;
+	background-image: url('/images/news_bg.png');
+	margin-top: -50px;
+}
+
+.main_contents_article {
+	width: 1280px;
+	height: 1572px;
+	background-image: url('/images/news_bg.png');
+	margin-top: -50px;
+}
+
+.main_contents_wrapper {
+	width: 1280px;
+	padding-top: 100px;
+}
+
+.breadcrumbs {
+	width: 900px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.tabs {
+	width: 900px;
+	font-size: 0;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.tab_frame {
+	width: 180px;
+	height: 54px;
+	background-image: url('/images/news_tab_frame_off.png');
+	display: inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.tab_frame.active {
+	background-image: url('/images/news_tab_frame_on.png');
+}
+
+.chars_frame {
+	width: 1280px;
+	/*height: 1061px;*/
+	height: 1440px;
+	position: absolute;
+	top: 317px;
+	left: 50%;
+	margin-left: -640px;
+}
+
+.upper_char {
+	width: 191px;
+	height: 353px;
+	background-image: url('/images/news_upper_char.png');
+	position: absolute;
+	top: -11px;
+	left: 6px;
+}
+
+.lower_char {
+	width: 221px;
+	height: 390px;
+	background-image: url('/images/news_lower_char.png');
+	position: absolute;
+	top: 654px;
+	left: 1063px;
+}
+
+.main_frame {
+	width: 943px;
+	height: 1061px;
+	background-image: url('/images/news_main_frame.png');
+	margin: auto;
+	position: relative;
+}
+
+/* ------------------------------------------------------------------------ List */
+
+.article_lines {
+	width: 748px;
+	height: 771px;
+	background-image: url('/images/news_article_lines.png');
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -374px;
+	margin-left: -385px;
+}
+
+.news_list {
+	width: 800px;
+	margin: auto;
+	padding-top: 90px;
+	height: 845px;
+}
+
+.news_item {
+	height: 65px;
+	position: relative;
+	padding-top: 5px;
+}
+
+.news_content {
+	margin-top: 8px;
+	height: 16px;
+	overflow: hidden;
+	width: 750px;
+}
+
+.news_date {
+	position: absolute;
+	top: 5px;
+	right: 50px;
+	font-size: 12px;
+}
+
+.news_notice_label {
+	width: 71px;
+	height: 19px;
+	background-image: url('/images/news_notice_label.png');
+}
+
+.news_update_label {
+	width: 91px;
+	height: 19px;
+	background-image: url('/images/news_update_label.png');
+}
+
+.news_event_label {
+	width: 62px;
+	height: 19px;
+	background-image: url('/images/news_event_label.png');
+}
+
+.news_maintenance_label {
+	width: 91px;
+	height: 19px;
+	background-image: url('/images/news_maintenance_label.png');
+}
+
+.more_btn {
+	width: 67px;
+	height: 33px;
+	background-image: url('/images/news_more_btn_l.png');
+	margin: auto;
+	margin-top: 30px;
+	cursor: pointer;
+}
+/* ------------------------------------------------------------------------ Article */
+
+.article_area {
+	width: 800px;
+	height: 800px;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.article_body {
+
+}
+
+.article_underline {
+	width: 748px;
+	height: 4px;
+	background-image: url('/images/article_underline.png');
+	margin: auto;
+}
+
+.pagenation_area {
+	width: 700px;
+	height: 80px;
+	margin: auto;
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.pagenation_left {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.pagenation_right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.bottom_char {
+	width: 874px;
+	height: 485px;
+	background-image: url('/images/news_bottom_char.png');
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -437px;
+}
+
+/* ------------------------------------------------------------------------ Footer */
+
+footer {
+	width: 100%;
+	position: relative;
+}
+
+.footer_texts {
+	background-color: #10243C;
+	width: 100%;
+	color: white;
+	height: 250px;
+	position: relative;
+}
+
+.footer_links {
+	width: 1280px;
+	height: 80px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	padding-top: 20px;
+	margin: auto;
+}
+
+.copyright_area {
+	padding-top: 20px;
+	max-width: 600px;
+	height: 80px;
+	margin: auto;
+	text-align: center;
+}

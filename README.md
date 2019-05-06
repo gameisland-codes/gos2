@@ -21,16 +21,21 @@ chmod 777 logs
 chmod 777 tmp
 ~~~
 
+If you fetch from git
+~~~
+composer install
+~~~
+
 login mysql with root
 
 SQL:
 ~~~
-CREATE DATABASE official_gos;
+CREATE DATABASE gos2;
 
-grant all privileges on official_gos.* to official_gos@'localhost' identified by 'WjrPSRssiebVbh7G';
+grant all privileges on gos2.* to gos2@'localhost' identified by 'WjrPSRssiebVbh7G';
 FLUSH PRIVILEGES;
 
-use official_gos;
+use gos2;
 
 CREATE TABLE `preregisterUsers` (
   `id` int(8) NOT NULL AUTO_INCREMENT,
@@ -41,7 +46,7 @@ CREATE TABLE `preregisterUsers` (
   KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ~~~
-next login (mysql -uofficial_gos -pWjrPSRssiebVbh7G official_gos)
+next login (mysql -uofficial_gos -pWjrPSRssiebVbh7G gos2)
 
 # Nginx (Accessport Test Server)
 ~~~
@@ -102,6 +107,9 @@ server {
 
 # Other
 Framework: Slim
+
+Doc: http://www.slimframework.com/docs/
+
 |Item|dir|
 ----|----
 |Version Detail|./comporser.json|
@@ -111,3 +119,38 @@ Framework: Slim
 |Controller|./app/*|
 |Assets(images/css/js/videos/sounds)|./public/*|
 |Plugins|./vendor/*|
+
+* ### DMM resource
+
+./src/routes.php
+
+./templates/dmm.php
+
+./public/*
+
+* ### Campaign Page
+
+./src/routes.php
+
+./templates/other/preregister_cp.php
+
+./public/css/other/preregister_cp.css
+
+./public/images/preregister_cp/*
+
+* ### If you need new controller
+
+Add 
+~~~
+$container['NewController'] = function ($c) {
+    require (__DIR__ . '/../app/NewController.php');
+    return new App\NewController($c);
+};
+~~~
+To
+
+./src/dependencies.php
+
+And
+
+Make "NewController.php" On ./app/
