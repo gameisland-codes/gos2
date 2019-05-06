@@ -17,22 +17,11 @@
 	<script src="/js/dmm.js"></script>
 </head>
 <body>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5P9PT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-N5P9PT');</script>
-<!-- End Google Tag Manager -->
-	<!-- [[ start of "dmm_ntgnavi" ]] -->
-	<div id="dmm_ntgnavi">
-		<ul class="navi_left">
-			<li class="dmm_top mg-l12"><a href="http://www.dmm.com/"><img src="https://www.dmm.com/images/netgame/navi/dmm_logo.gif" alt="DMM.com"></a></li>
-			<li class="ntg_top"><a href="http://www.dmm.com/netgame/"><span>DMM GAMESトップ</span></a></li>
-			<li class="ntg_poi"><a href="https://point.dmm.com/choice/pay?basket_service_type=freegame" target="_blank"><span>ポイントチャージ</span></a></li>
-		</ul>
-		<ul class="navi_right">
-			<li><a href="http://www.dmm.com/netgame/top/guide/startguide_html/=/ch_navi=/" class="arrow">初めての方</a></li>
-		</ul>
-		<div class="clear"></div>
-	</div>
-	<!-- [[ end of "dmm_ntgnavi" ]] -->
+
+	<?php
+		include('adTag/dmm_gtm.php');
+		include('vendor/dmm_nav.php');
+	?>
 
 	<div class="fixed_bg">
 		<div class="top">
@@ -65,27 +54,29 @@
 			</div>
 		</div>
 
-		<?php include('vendor/indexContentsDmm.php') ?>
-
-		<?php include('vendor/footer.php') ?>
-
-		<?php include('vendor/floatAreaDmm.php') ?>
+		<?php
+			$platform = 'dmm';
+			include('vendor/indexContents.php');
+			include('vendor/footer.php');
+			include('vendor/floatArea.php');
+		?>
 	</div>
-<script src="//platform.gameisland.co.jp/js/public/messenger.js" type="text/javascript"></script>
-<script type="text/javascript">
-var messenger = new Messenger('parentMT', 'gos2');
-messenger.listen(function(msg){
-	layer.closeAll();
-	layer.open({
-		type: 2,
-		title: false,
-		skin: 'layui-layer-none',
-		area: ['800px', '600px'],
-		closeBtn: true,
-		shadeClose: false,
-		content: msg,
-	});
-});
-</script>
+
+	<script src="//platform.gameisland.co.jp/js/public/messenger.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var messenger = new Messenger('parentMT', 'gos2');
+		messenger.listen(function(msg){
+				layer.closeAll();
+				layer.open({
+				type: 2,
+				title: false,
+				skin: 'layui-layer-none',
+				area: ['800px', '600px'],
+				closeBtn: true,
+				shadeClose: false,
+				content: msg,
+			});
+		});
+	</script>
 </body>
 </html>

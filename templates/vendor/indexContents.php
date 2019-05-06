@@ -1,7 +1,17 @@
 		<div class="contents_wrapper">
 			<div class="banner_area">
 				<div class="banners">
-					<img src="/images/preregister_cp_banner.jpg">
+
+					<?php if($platform == 'dmm'): ?>
+
+						<img src="/images/preregister_cp_banner_dmm.jpg">
+
+					<?php else: ?>
+
+						<img src="/images/preregister_cp_banner.jpg">
+
+					<?php endif; ?>
+
 				</div>
 				<div class="banner_frame"></div>
 				<div class="banner_clicker"></div>
@@ -14,7 +24,45 @@
 			<div id="news">
 				<div class="news_wrapper">
 					<div class="news_list">
-						<iframe src="//cms.gameisland.co.jp/gos2/official/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 663px;width: 500px;"></iframe>
+						<div class="news_tabs">
+							<div class="news_tab_all active"></div>
+							<div class="news_tab_notice"></div>
+							<div class="news_tab_event"></div>
+							<div class="news_tab_update"></div>
+							<div class="news_tab_maintenance"></div>
+						</div>
+						<div class="news_list_wrapper">
+							<div class="news_item">
+								<div class="news_notice_label"></div>
+								<div class="news_content">
+									<a href="/news/example" target="_blank">お知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせ</a>
+								</div>
+								<div class="news_date">2019.05.01</div>
+							</div>
+							<div class="news_item">
+								<div class="news_event_label"></div>
+								<div class="news_content">
+									<a href="/news/example" target="_blank">イベント</a>
+								</div>
+								<div class="news_date">2019.05.01</div>
+							</div>
+							<div class="news_item">
+								<div class="news_update_label"></div>
+								<div class="news_content">
+									<a href="/news/example" target="_blank">アップデート</a>
+								</div>
+								<div class="news_date">2019.05.01</div>
+							</div>
+							<div class="news_item">
+								<div class="news_maintenance_label"></div>
+								<div class="news_content">
+									<a href="/news/example" target="_blank">メンテナンス</a>
+								</div>
+								<div class="news_date">2019.05.01</div>
+							</div>
+							<!-- <iframe src="//cms.gameisland.co.jp/gos2/<?php echo $platform; ?>/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe> -->
+						</div>
+						<a href="/news" target="_blank" class="news_more_btn"></a>
 					</div>
 					<div class="twitter_timeline">
 						<div class="timeline_area">
@@ -68,12 +116,14 @@
 							<img src="/images/system_card_4_on.png">
 							<img src="/images/system_card_5_on.png">
 							<img src="/images/system_card_6_on.png">
+							<img src="/images/system_card_7_on.png">
 							<img src="/images/system_card_1_off.png">
 							<img src="/images/system_card_2_off.png">
 							<img src="/images/system_card_3_off.png">
 							<img src="/images/system_card_4_off.png">
 							<img src="/images/system_card_5_off.png">
 							<img src="/images/system_card_6_off.png">
+							<img src="/images/system_card_7_off.png">
 						</div>
 						<!--PRELOAD-->
 					</div>
