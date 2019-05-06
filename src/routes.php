@@ -1,15 +1,15 @@
 <?php
 $host = $_SERVER['HTTP_HOST'];
 
-
-/* /////////////////////
-
-	Official Route
-
-*/ /////////////////////
+if (preg_match('/iPhone|iPod|iPad|Android/ui', $_SERVER['HTTP_USER_AGENT'])) {
+	define('DEVICE', 'sp');
+} else {
+	define('DEVICE', 'pc');
+}
 
 if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' ) {
-// if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'n.test.gos2.jp' ) {
+// if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'sp.test.gos2.jp' ) {
+	define('PLATFORM', 'official');
 
 	$app->get('/',function($request, $response){
 		$data = [];
@@ -24,6 +24,9 @@ if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' ) {
 		}
 		*/
 
+		if (DEVICE == 'sp') {
+			return $this->renderer->render($response, 'sp/index.php', $data);
+		}
 		return $this->renderer->render($response, 'index.php', $data);
 	});
 
@@ -49,7 +52,8 @@ if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' ) {
 */ /////////////////////
 
 if ( $host == 'dmg.gos2.jp' ) {
-// if ( $host == 'dmg.gos2.jp' || $host == 'dmg.test.gos2.jp' ) {
+	define('PLATFORM', 'dmm');
+
 
 	$app->get('/',function($request, $response){
 		return $this->renderer->render($response, 'dmm.php');
