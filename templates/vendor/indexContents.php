@@ -68,44 +68,7 @@
 			<div id="news">
 				<div class="news_wrapper">
 					<div class="news_list">
-						<div class="news_tabs">
-							<div class="news_tab_all active"></div>
-							<div class="news_tab_notice"></div>
-							<div class="news_tab_event"></div>
-							<div class="news_tab_update"></div>
-							<div class="news_tab_maintenance"></div>
-						</div>
-						<div class="news_list_wrapper">
-							<div class="news_item">
-								<div class="news_notice_label"></div>
-								<div class="news_content">
-									<a href="/news/example" target="_blank">お知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせ</a>
-								</div>
-								<div class="news_date">2019.05.01</div>
-							</div>
-							<div class="news_item">
-								<div class="news_event_label"></div>
-								<div class="news_content">
-									<a href="/news/example" target="_blank">イベント</a>
-								</div>
-								<div class="news_date">2019.05.01</div>
-							</div>
-							<div class="news_item">
-								<div class="news_update_label"></div>
-								<div class="news_content">
-									<a href="/news/example" target="_blank">アップデート</a>
-								</div>
-								<div class="news_date">2019.05.01</div>
-							</div>
-							<div class="news_item">
-								<div class="news_maintenance_label"></div>
-								<div class="news_content">
-									<a href="/news/example" target="_blank">メンテナンス</a>
-								</div>
-								<div class="news_date">2019.05.01</div>
-							</div>
-							<!-- <iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe> -->
-						</div>
+						<iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/top_news_v2.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe>
 						<a href="/news" target="_blank" class="news_more_btn"></a>
 					</div>
 					<div class="twitter_timeline">
