@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="/js/layer.js"></script>
 
-	<?php if ($platform == 'dmm'): ?>
+	<?php if (PLATFORM == 'dmm'): ?>
 
 		<script src="/js/dmm.js"></script>
 		<link rel="stylesheet" type="text/css" href="/css/dmm_nav.css">
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-	<?php if ($platform == 'dmm'): ?>
+	<?php if (PLATFORM == 'dmm'): ?>
 
 		<?php
 			include(__DIR__ . '/../adTag/dmm_gtm.php');
@@ -68,7 +68,7 @@
 		<div class="bg_pattern_top"></div>
 		<div class="contents_wrapper">
 
-			<?php if ($platform == 'dmm'): ?>
+			<?php if (PLATFORM == 'dmm'): ?>
 
 				<div class="dmm_checkbox_area">
 					<div class="dmm_checkbox_wrapper">
@@ -131,7 +131,7 @@
 			});
 		}
 
-		<?php if ($platform == 'dmm'): ?>
+		<?php if (PLATFORM == 'dmm'): ?>
 
 			function openPreregister () {
 				openPreregisterModal();

@@ -13,7 +13,7 @@
 				<div class="breadcrumbs">
 					<p><a href="/">トップ</a>　＞　<a href="/news">ニュース</a></p>
 				</div>
-				<iframe src="//cms.gameisland.co.jp/gos2/<?php echo $platform; ?>/news_list_page.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 1500px;width: 1280px;"></iframe>
+				<iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/news_list_page.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 1500px;width: 1280px;"></iframe>
 			</div>
 		</div>
 	</div>

@@ -4,18 +4,19 @@
 	<meta charset="utf-8"/>
 	<title>GOS2</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, minimal-ui, user-scalable=yes">
-	<meta name="keywords" content="gos2" />
-	<meta name="description" content="ガンズオブソウル2（GOS2）「ガンズオブソウル2（Guns of Soul2）」。公式サイト." />
+	<?php
+		include(__DIR__ . '/../vendor/meta.php');
+		include(__DIR__ . '/../vendor/preload.php');
+	?>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/sp/main.css<?php echo '?'.time() ?>">
+	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?1905">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="/js/scrollreveal.min.js"></script>
 	<script src="/js/howler.min.js"></script>
 	<script src="/js/layer.js"></script>
-	<!-- <script src="/js/main.js"></script> -->
-	<script src="/js/sp/main.js<?php echo '?'.time() ?>"></script>
+	<script src="/js/main.js?1905"></script>
 </head>
 <body>
 	<div class="fixed_bg"></div>
@@ -94,24 +95,6 @@
 					<div class="system_cards_area">
 						<div class="system_card_upper"></div>
 						<div class="system_card_lower"></div>
-						<!--PRELOAD-->
-						<div style="display: none;">
-							<img src="/images/system_card_1_on.png">
-							<img src="/images/system_card_2_on.png">
-							<img src="/images/system_card_3_on.png">
-							<img src="/images/system_card_4_on.png">
-							<img src="/images/system_card_5_on.png">
-							<img src="/images/system_card_6_on.png">
-							<img src="/images/system_card_7_on.png">
-							<img src="/images/system_card_1_off.png">
-							<img src="/images/system_card_2_off.png">
-							<img src="/images/system_card_3_off.png">
-							<img src="/images/system_card_4_off.png">
-							<img src="/images/system_card_5_off.png">
-							<img src="/images/system_card_6_off.png">
-							<img src="/images/system_card_7_off.png">
-						</div>
-						<!--PRELOAD-->
 					</div>
 					<div class="system_btn_area">
 						<div class="system_left_btn"></div>
@@ -136,21 +119,21 @@
 		</div>
 	</div>
 
-<script src="//platform.gameisland.co.jp/js/public/messenger.js" type="text/javascript"></script>
-<script type="text/javascript">
-var messenger = new Messenger('parentMT', 'gos2');
-messenger.listen(function(msg){
-	layer.closeAll();
-	layer.open({
-		type: 2,
-		title: false,
-		skin: 'layui-layer-none',
-		area: ['90%', '80%'],
-		closeBtn: true,
-		shadeClose: true,
-		content: msg,
+	<script src="//platform.gameisland.co.jp/js/public/messenger.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	var messenger = new Messenger('parentMT', 'gos2');
+	messenger.listen(function(msg){
+		layer.closeAll();
+		layer.open({
+			type: 2,
+			title: false,
+			skin: 'layui-layer-none',
+			area: ['90%', '80%'],
+			closeBtn: true,
+			shadeClose: true,
+			content: msg,
+		});
 	});
-});
-</script>
+	</script>
 </body>
 </html>

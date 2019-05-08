@@ -3,6 +3,8 @@ html, body {
 	padding: 0;
 	line-height: 1;
 	font-family: "メイリオ", "Hiragino Kaku Gothic Pro", Meiryo, "ヒラギノ角ゴ Pro W3", "MS PGothic", "MS UI Gothic", Helvetica, Arial, sans-serif;
+	min-width: 100%;
+	overflow-x: hidden;
 }
 
 .menu_btn {
@@ -904,6 +906,102 @@ footer {
 	top: 37%;
 }
 
+.char_12 .anim_char .char {
+	/* 480 x 633 */
+	width: 70vw;
+	height: calc(633/480*70vw);
+	background-image: url('/images/chars/char_12.png');
+	background-repeat: no-repeat;
+	background-size: 70vw calc(633/480*70vw);
+	left: 50%;
+	margin-left: -33vw;
+	top: 29%;
+}
+
+.char_13 .anim_char .char {
+	/* 468 x 694 */
+	width: 65vw;
+	height: calc(694/468*65vw);
+	background-image: url('/images/chars/char_13.png');
+	background-repeat: no-repeat;
+	background-size: 65vw calc(694/468*65vw);
+	left: 50%;
+	margin-left: -30vw;
+	top: 26%;
+}
+
+.char_14 .anim_char .char {
+	/* 455 x 617 */
+	width: 70vw;
+	height: calc(617/455*70vw);
+	background-image: url('/images/chars/char_14.png');
+	background-repeat: no-repeat;
+	background-size: 70vw calc(617/455*70vw);
+	left: 50%;
+	margin-left: -38vw;
+	top: 28%;
+}
+
+.char_15 .anim_char .char {
+	/* 657 x 595 */
+	width: 80vw;
+	height: calc(595/657*80vw);
+	background-image: url('/images/chars/char_15.png');
+	background-repeat: no-repeat;
+	background-size: 80vw calc(595/657*80vw);
+	left: 50%;
+	margin-left: -40vw;
+	top: 37%;
+}
+
+.char_16 .anim_char .char {
+	/* 581 x 694 */
+	width: 75vw;
+	height: calc(694/581*75vw);
+	background-image: url('/images/chars/char_16.png');
+	background-repeat: no-repeat;
+	background-size: 75vw calc(694/581*75vw);
+	left: 50%;
+	margin-left: -36vw;
+	top: 30%;
+}
+
+.char_17 .anim_char .char {
+	/* 468 x 617 */
+	width: 65vw;
+	height: calc(694/581*65vw);
+	background-image: url('/images/chars/char_17.png');
+	background-repeat: no-repeat;
+	background-size: 65vw calc(694/581*65vw);
+	left: 50%;
+	margin-left: -38vw;
+	top: 35%;
+}
+
+.char_18 .anim_char .char {
+	/* 561 x 591 */
+	width: 70vw;
+	height: calc(591/561*70vw);
+	background-image: url('/images/chars/char_18.png');
+	background-repeat: no-repeat;
+	background-size: 70vw calc(591/561*70vw);
+	left: 50%;
+	margin-left: -36vw;
+	top: 37%;
+}
+
+.char_19 .anim_char .char {
+	/* 553 x 721 */
+	width: 70vw;
+	height: calc(721/561*70vw);
+	background-image: url('/images/chars/char_19.png');
+	background-repeat: no-repeat;
+	background-size: 70vw calc(721/561*70vw);
+	left: 50%;
+	margin-left: -32vw;
+	top: 28%;
+}
+
 .anim_char_label {
 	/* 894 x 246 */
 	width: 120vw;
@@ -937,6 +1035,14 @@ footer {
 .char_9 .anim_char_label .char_label {background-image: url('/images/chars/char_label_9.png');}
 .char_10 .anim_char_label .char_label {background-image: url('/images/chars/char_label_10.png');}
 .char_11 .anim_char_label .char_label {background-image: url('/images/chars/char_label_11.png');}
+.char_12 .anim_char_label .char_label {background-image: url('/images/chars/char_label_12.png');}
+.char_13 .anim_char_label .char_label {background-image: url('/images/chars/char_label_13.png');}
+.char_14 .anim_char_label .char_label {background-image: url('/images/chars/char_label_14.png');}
+.char_15 .anim_char_label .char_label {background-image: url('/images/chars/char_label_15.png');}
+.char_16 .anim_char_label .char_label {background-image: url('/images/chars/char_label_16.png');}
+.char_17 .anim_char_label .char_label {background-image: url('/images/chars/char_label_17.png');}
+.char_18 .anim_char_label .char_label {background-image: url('/images/chars/char_label_18.png');}
+.char_19 .anim_char_label .char_label {background-image: url('/images/chars/char_label_19.png');}
 
 .detail_bg_1, .detail_bg_2, .detail_bg_3, .detail_bg_4 {
 	/* 519 x 198 */
