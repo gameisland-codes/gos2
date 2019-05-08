@@ -226,6 +226,7 @@ footer {
 	width: 100%;
 	position: relative;
 	margin-top: -60px;
+	min-width: 1280px;
 }
 
 .footer_texts {

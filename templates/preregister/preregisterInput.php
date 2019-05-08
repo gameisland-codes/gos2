@@ -3,7 +3,8 @@
 <head>
 	<meta NAME=”ROBOTS” CONTENT=”NONE”>
 	<title>事前登録ページ</title>
-	<link rel="stylesheet" type="text/css" href="/css/preregister.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, minimal-ui, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="/css/preregister.css?1905">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="/js/layer.js"></script>
 </head>

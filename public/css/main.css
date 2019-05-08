@@ -10,6 +10,8 @@ html, body {
 	background: #000 url('/images/bg.png') top center no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
+	min-width: 1280px;
+	overflow-x: hidden;
 }
 
 img {
@@ -41,7 +43,7 @@ a,a:link,a:visited,a:hover,a:active {
 	height: 773px;
 	background-image: url('/images/top_bg.png');
 	position: relative;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	width: 100%;
 	background-size: 100% 775px;
 	overflow: hidden;
@@ -172,14 +174,28 @@ nav a:hover {
 	height: 380px;
 }
 
+.movie_wrapper {
+	width: 478px;
+	height: 308px;
+	margin: auto;
+	position: relative;
+}
+
+.movie_thumbnail {
+	position: absolute;
+	width: 478px;
+	height: 308px;
+	background-image: url('/images/thumbnail_190423.png');
+}
+
 .movie_frame {
+	position: relative;
 	width: 478px;
 	height: 308px;
 	background-image: url('/images/movie_frame.png');
-	margin: auto;
+	background-repeat: no-repeat;
 	margin-top: 10px;
 	padding-top: 110px;
-    background-repeat: no-repeat;
 }
 
 .movie_play_btn {
@@ -187,7 +203,7 @@ nav a:hover {
 	height: 84px;
 	background-image: url('/images/movie_play_btn.png');
 	margin: auto;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 /* ---------------------------------------------------------------------------- News Start */
@@ -762,16 +778,6 @@ footer {
 	top: 80px;
 }
 
-/*
-.char_1 .anim_char .char_text {
-	width: 138px;
-	height: 286px;
-	background-image: url('/images/chars/char_1_text.png');
-	left: 20px;
-	top: 50px;
-}
-*/
-
 .char_2 .anim_char .char {
 	width: 490px;
 	height: 716px;
@@ -780,16 +786,6 @@ footer {
 	margin-left: -240px;
 	top: 20px;
 }
-
-/*
-.char_2 .anim_char .char_text {
-	width: 138px;
-	height: 447px;
-	background-image: url('/images/chars/char_2_text.png');
-	left: 30px;
-	top: 80px;
-}
-*/
 
 .char_3 .anim_char .char {
 	width: 584px;
@@ -801,16 +797,6 @@ footer {
 	top: 70px;
 }
 
-/*
-.char_3 .anim_char .char_text {
-	width: 101px;
-	height: 341px;
-	background-image: url('/images/chars/char_3_text.png');
-	left: 70px;
-	top: 80px;
-}
-*/
-
 .char_4 .anim_char .char {
 	width: 457px;
 	height: 545px;
@@ -819,16 +805,6 @@ footer {
 	margin-left: -210px;
 	top: 165px;
 }
-
-/*
-.char_4 .anim_char .char_text {
-	width: 175px;
-	height: 363px;
-	background-image: url('/images/chars/char_4_text.png');
-	left: 25px;
-	top: 80px;
-}
-*/
 
 .char_5 .anim_char .char {
 	width: 578px;
@@ -839,16 +815,6 @@ footer {
 	top: 100px;
 }
 
-/*
-.char_5 .anim_char .char_text {
-	width: 137px;
-	height: 339px;
-	background-image: url('/images/chars/char_5_text.png');
-	left: 40px;
-	top: 80px;
-}
-*/
-
 .char_6 .anim_char .char {
 	width: 436px;
 	height: 645px;
@@ -857,16 +823,6 @@ footer {
 	margin-left: -200px;
 	top: 80px;
 }
-
-/*
-.char_6 .anim_char .char_text {
-	width: 138px;
-	height: 342px;
-	background-image: url('/images/chars/char_6_text.png');
-	left: 60px;
-	top: 80px;
-}
-*/
 
 .char_7 .anim_char .char {
 	width: 488px;
@@ -877,34 +833,14 @@ footer {
 	top: 30px;
 }
 
-/*
-.char_7 .anim_char .char_text {
-	width: 138px;
-	height: 357px;
-	background-image: url('/images/chars/char_7_text.png');
-	left: 60px;
-	top: 80px;
-}
-*/
-
 .char_8 .anim_char .char {
 	width: 581px;
 	height: 674px;
 	background-image: url('/images/chars/char_8.png');
 	left: 50%;
-	margin-left: -275px;
+	margin-left: -285px;
 	top: 45px;
 }
-
-/*
-.char_8 .anim_char .char_text {
-	width: 101px;
-	height: 257px;
-	background-image: url('/images/chars/char_8_text.png');
-	left: 70px;
-	top: 80px;
-}
-*/
 
 .char_9 .anim_char .char {
 	width: 566px;
@@ -914,16 +850,6 @@ footer {
 	margin-left: -270px;
 	top: 100px;
 }
-
-/*
-.char_9 .anim_char .char_text {
-	width: 100px;
-	height: 391px;
-	background-image: url('/images/chars/char_9_text.png');
-	left: 80px;
-	top: 80px;
-}
-*/
 
 .char_10 .anim_char .char {
 	width: 524px;
@@ -941,6 +867,78 @@ footer {
 	left: 50%;
 	margin-left: -230px;
 	top: 160px;
+}
+
+.char_12 .anim_char .char {
+	width: 480px;
+	height: 633px;
+	background-image: url('/images/chars/char_12.png');
+	left: 50%;
+	margin-left: -240px;
+	top: 80px;
+}
+
+.char_13 .anim_char .char {
+	width: 468px;
+	height: 694px;
+	background-image: url('/images/chars/char_13.png');
+	left: 50%;
+	margin-left: -218px;
+	top: 30px;
+}
+
+.char_14 .anim_char .char {
+	width: 455px;
+	height: 617px;
+	background-image: url('/images/chars/char_14.png');
+	left: 50%;
+	margin-left: -280px;
+	top: 110px;
+}
+
+.char_15 .anim_char .char {
+	width: 657px;
+	height: 595px;
+	background-image: url('/images/chars/char_15.png');
+	left: 50%;
+	margin-left: -338px;
+	top: 130px;
+}
+
+.char_16 .anim_char .char {
+	width: 581px;
+	height: 694px;
+	background-image: url('/images/chars/char_16.png');
+	left: 50%;
+	margin-left: -300px;
+	top: 70px;
+}
+
+.char_17 .anim_char .char {
+	width: 468px;
+	height: 617px;
+	background-image: url('/images/chars/char_17.png');
+	left: 50%;
+	margin-left: -300px;
+	top: 110px;
+}
+
+.char_18 .anim_char .char {
+	width: 561px;
+	height: 591px;
+	background-image: url('/images/chars/char_18.png');
+	left: 50%;
+	margin-left: -300px;
+	top: 130px;
+}
+
+.char_19 .anim_char .char {
+	width: 553px;
+	height: 721px;
+	background-image: url('/images/chars/char_19.png');
+	left: 50%;
+	margin-left: -250px;
+	top: 10px;
 }
 
 .anim_char_label {
@@ -970,6 +968,14 @@ footer {
 .char_9 .anim_char_label .char_label {background-image: url('/images/chars/char_label_9.png');}
 .char_10 .anim_char_label .char_label {background-image: url('/images/chars/char_label_10.png');}
 .char_11 .anim_char_label .char_label {background-image: url('/images/chars/char_label_11.png');}
+.char_12 .anim_char_label .char_label {background-image: url('/images/chars/char_label_12.png');}
+.char_13 .anim_char_label .char_label {background-image: url('/images/chars/char_label_13.png');}
+.char_14 .anim_char_label .char_label {background-image: url('/images/chars/char_label_14.png');}
+.char_15 .anim_char_label .char_label {background-image: url('/images/chars/char_label_15.png');}
+.char_16 .anim_char_label .char_label {background-image: url('/images/chars/char_label_16.png');}
+.char_17 .anim_char_label .char_label {background-image: url('/images/chars/char_label_17.png');}
+.char_18 .anim_char_label .char_label {background-image: url('/images/chars/char_label_18.png');}
+.char_19 .anim_char_label .char_label {background-image: url('/images/chars/char_label_19.png');}
 
 .detail_bg_1, .detail_bg_2, .detail_bg_3, .detail_bg_4 {
 	width: 519px;
@@ -1002,6 +1008,7 @@ footer {
 	margin-left: 188px;
 	color: white;
 	width: 310px;
+	line-height: 1.5rem;
 }
 
 .char_intro_controller {

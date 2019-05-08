@@ -1,15 +1,23 @@
 var __charInfo = {
 	 1:{id: 1,attr:1,introPage:1,name:'ラビ',introText:['新たに部隊に配属された副官。任務中のあらゆる場所で隊員への補助やサポートを行うオペレーターを担う。']},
-	 2:{id: 2,attr:2,introPage:1,name:'シェリー',introText:['生体反応などを感じ取る異能力者。偵察や索敵を担当することが多い。能力の希少性から軍で保護されているが、稀に戦場に現れる。']},
-	 3:{id: 3,attr:2,introPage:1,name:'エミ',introText:['年端もいかぬ少女でありながら、機械工学において優秀な実績をもつ。自分で開発した決戦兵器を従え、高らかに笑いながら戦場を蹂躙する。']},
-	 4:{id: 4,attr:2,introPage:1,name:'アン',introText:['部隊の下っ端として配属された記憶喪失の少女。なにかしら能力を持つようだが、それを扱う術すら思い出せずにいる。']},
-	 5:{id: 5,attr:2,introPage:1,name:'マリー',introText:['前線で活躍中の優秀な兵士。美人で聡明な、だがそれを鼻にかけない謙虚さも持つ。男性兵士からの誘いが多く困っている。']},
-	 6:{id: 6,attr:3,introPage:1,name:'トーア',introText:['自宅が戦場となったことで、一度に家族を失うという経歴を持つ新兵の1人。プロ意識、上昇志向の強さは復讐の炎によって滾っているようだ。']},
-	 7:{id: 7,attr:3,introPage:1,name:'オランド',introText:['学問を理由に徴兵制をのらりくらりかわしてきた、お調子者の新兵。心から世界を救おうとは考えておらず、どこか頼りない印象を与える。']},
-	 8:{id: 8,attr:3,introPage:1,name:'シリウス',introText:['軍の実験体にして最高傑作と称されているいわゆるサイボーグ。規律第一のアッシュと、常に自由行動の彼が対立している様はもはや風物詩。']},
-	 9:{id: 9,attr:3,introPage:1,name:'アッシュ',introText:['軍のエリート、幹部となった女性兵。若さとは裏腹に非常に能力が高く、硝煙の女神とも呼ばれている。規律が兵を守る、が信条。']},
-	10:{id:10,attr:3,introPage:1,name:'カメリア',introText:['前線で活躍中の優秀な兵士。暗くなりがちな前線基地での華として、持ち前の明るさで周囲に気力を与える。派手なものを好むのが玉に瑕。']},
-	11:{id:11,attr:4,introPage:1,name:'ライナー',introText:['軍では珍しい所帯を持つ兵士。ホームで帰りを待つ妻子の為、絶対に生きて帰るという断固たる意志を持つ。強面だが子には甘いマイホームパパ。']},
+	 2:{id:12,attr:1,introPage:1,name:'シグルーン',introText:['兵士に内蔵されているアンテナに、戦術や判断を送受信する戦闘AI。各部隊の基地に配備されており、その部隊独自の情報を共有する。']},
+	 3:{id: 2,attr:2,introPage:1,name:'シェリー',introText:['生体反応などを感じ取る異能力者。偵察や索敵を担当することが多い。能力の希少性から軍で保護されているが、稀に戦場に現れる。']},
+	 4:{id: 3,attr:2,introPage:1,name:'エミ',introText:['年端もいかぬ少女でありながら、機械工学において優秀な実績をもつ。自分で開発した決戦兵器を従え、高らかに笑いながら戦場を蹂躙する。']},
+	 5:{id: 4,attr:2,introPage:1,name:'アン',introText:['部隊の下っ端として配属された記憶喪失の少女。なにかしら能力を持つようだが、それを扱う術すら思い出せずにいる。']},
+	 6:{id: 5,attr:2,introPage:1,name:'マリー',introText:['前線で活躍中の優秀な兵士。美人で聡明な、だがそれを鼻にかけない謙虚さも持つ。男性兵士からの誘いが多く困っている。']},
+	 7:{id:13,attr:2,introPage:1,name:'ルーシー',introText:['戦災孤児であり、実験体の1人。イスカとは姉妹のように仲が良い。無口で自分の意見をあまり言わない。イスカのような女性に憧れている。']},
+	 8:{id:19,attr:2,introPage:1,name:'イスカ',introText:['戦災孤児であり、実験体の1人。ルーシーとは姉妹のように仲が良い。無口な妹を代弁するかのような気丈さを持つ。']},
+	 9:{id: 6,attr:3,introPage:1,name:'トーア',introText:['自宅が戦場となったことで、一度に家族を失うという経歴を持つ新兵の1人。プロ意識、上昇志向の強さは復讐の炎によって滾っているようだ。']},
+	10:{id: 7,attr:3,introPage:1,name:'オランド',introText:['学問を理由に徴兵制をのらりくらりかわしてきた、お調子者の新兵。心から世界を救おうとは考えておらず、どこか頼りない印象を与える。']},
+	11:{id: 8,attr:3,introPage:1,name:'シリウス',introText:['軍の実験体にして最高傑作と称されているいわゆるサイボーグ。規律第一のアッシュと、常に自由行動の彼が対立している様はもはや風物詩。']},
+	12:{id: 9,attr:3,introPage:1,name:'アッシュ',introText:['軍のエリート、幹部となった女性兵。若さとは裏腹に非常に能力が高く、硝煙の女神とも呼ばれている。規律が兵を守る、が信条。']},
+	13:{id:14,attr:3,introPage:1,name:'イリス',introText:['副官候補だったが一般兵として配属。冷静に振る舞おうとしているがとかく男性に免疫がなく、他愛のないことで狼狽する。']},
+	14:{id:10,attr:3,introPage:1,name:'カメリア',introText:['前線で活躍中の優秀な兵士。暗くなりがちな前線基地での華として、持ち前の明るさで周囲に気力を与える。派手なものを好むのが玉に瑕。']},
+	15:{id:15,attr:4,introPage:1,name:'シスネ',introText:['オーパーツとも呼ばれる戦闘機兵『RRアイギス』への適応を示した人物。見た目の可憐さとは裏腹に、容赦なくその鉄腕を振り下ろす冷徹さも持つ。']},
+	16:{id:16,attr:4,introPage:1,name:'シーリン',introText:['浮遊する小型機兵を超能力のごとく操る中国支部のエリート兵。軍人でありながら料理が趣味で、よく仲間に振る舞っているようだ。']},
+	17:{id:11,attr:4,introPage:1,name:'ライナー',introText:['軍では珍しい所帯を持つ兵士。ホームで帰りを待つ妻子の為、絶対に生きて帰るという断固たる意志を持つ。強面だが子には甘いマイホームパパ。']},
+	18:{id:17,attr:4,introPage:1,name:'ティグレ',introText:['時間操作の特殊能力を持つ人物。希少性から軍に保護されているが、慇懃無礼かつ傍若無人、女好きと、基地内での評判はすこぶる悪い。']},
+	19:{id:18,attr:4,introPage:1,name:'アーネスト',introText:['自発的に口を開くことはなく、基地内でも装備を脱がない謎の人物。忠実に任務をこなす仕事人でもあり、仲間からの信頼は厚い。']},
 };
 var __curCharLength=Object.keys(__charInfo).length;
 
@@ -30,9 +38,9 @@ function genChars(){
 		e+='<div class="swiper-slide">'+
 				'<div class="char_wrapper char_controller_'+k+' char_'+info.id+'">'+
 					'<div class="voice_btns">'+
-						'<div class="voice_btn_1"></div>'+
-						'<div class="voice_btn_2"></div>'+
-						'<div class="voice_btn_3"></div>'+
+						'<div class="voice_btn_1" data-charid="'+info.id+'"></div>'+
+						'<div class="voice_btn_2" data-charid="'+info.id+'"></div>'+
+						'<div class="voice_btn_3" data-charid="'+info.id+'"></div>'+
 					'</div>'+
 					'<div class="anim_char">'+
 						'<div class="anim_char_wrapper">'+
@@ -106,15 +114,15 @@ function genCharSwiper(){
 				slideNextTransitionEnd:slideNextTransitionEnd,
 				init:function(){
 					$('.voice_btn_1').on('click', function(){
-						playCharVoice(1);
+						playCharVoice($(this).data('charid'), 1);
 					});
 
 					$('.voice_btn_2').on('click', function(){
-						playCharVoice(2);
+						playCharVoice($(this).data('charid'), 2);
 					});
 
 					$('.voice_btn_3').on('click', function(){
-						playCharVoice(3);
+						playCharVoice($(this).data('charid'), 3);
 					});
 				},
 			}
@@ -194,6 +202,8 @@ function btnController(){
 }
 
 function openPreregisterModal () {
+	window.open('/preregister/input', '_blank');
+	/*
 	layer.closeAll();
 	layer.open({
 		type: 2,
@@ -204,6 +214,7 @@ function openPreregisterModal () {
 		shadeClose: false,
 		content: '/preregister/input',
 	});
+	*/
 }
 
 function playYoutubeWindow(){
@@ -370,12 +381,12 @@ function loadTwitterTimeLine(){
 }
 
 var __soundObj = null;
-function playCharVoice (voiceNum) {
+function playCharVoice (charId, voiceNum) {
 	if (__soundObj)
 		__soundObj.unload();
 
 	__soundObj = new Howl({
-		src: ['/sounds/chars/'+__curCharNum+'_'+voiceNum+'.wav'],
+		src: ['/sounds/chars/'+charId+'_'+voiceNum+'.wav'],
 		volume: .5,
 	});
 
