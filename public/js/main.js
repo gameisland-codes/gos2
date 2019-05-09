@@ -395,7 +395,10 @@ function playCharVoice (charId, voiceNum) {
 		__soundObj.unload();
 
 	__soundObj = new Howl({
-		src: ['/sounds/chars/'+charId+'_'+voiceNum+'.wav'],
+		src: [
+			'/sounds/chars/'+charId+'_'+voiceNum+'.wav',
+			'/sounds/chars/'+charId+'_'+voiceNum+'.mp3',
+		],
 		volume: .5,
 	});
 
