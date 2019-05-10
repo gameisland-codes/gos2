@@ -78,7 +78,13 @@ $app->get('/preregister_cp',function($request, $response) {
 });
 
 $app->get('/news[/{article}]',function($request, $response, $args) {
-	return $this->renderer->render($response, 'news/'.(empty($args) ? 'list' : 'article').'.php', [
+	$root = '';
+
+	if (DEVICE == 'sp') {
+		$root = 'sp/';
+	}
+
+	return $this->renderer->render($response, $root.'news/'.(empty($args) ? 'list' : 'article').'.php', [
 		'article' => isset($args['article']) ? $args['article'] : '',
 	]);
 });

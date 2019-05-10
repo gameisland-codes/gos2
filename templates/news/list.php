@@ -3,7 +3,7 @@
 <head>
 	<meta NAME=”ROBOTS” CONTENT=”NONE”>
 	<title>GOS2 | ニュース</title>
-	<link rel="stylesheet" type="text/css" href="/css/news.css<?php echo '?'.time() ?>">
+	<link rel="stylesheet" type="text/css" href="/css/news.css">
 </head>
 <body>
 	<div class="wrapper">
