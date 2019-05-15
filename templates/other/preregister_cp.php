@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>事前登録キャンペーン</title>
+	<title>GOS2|ガンズオブソウル2（Guns of Soul2）事前登録キャンペーン</title>
 
 	<link rel="stylesheet" type="text/css" href="/css/other/preregister_cp.css?1905">
 

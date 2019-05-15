@@ -18,6 +18,10 @@ img {
 	border: 0;
 }
 
+p {
+	margin: 0;
+}
+
 a,a:link,a:visited,a:hover,a:active {
 	color: #fff;
 }
@@ -113,7 +117,6 @@ nav a:hover {
 .logo {
 	width: 413px;
 	height: 194px;
-	background-image: url('/images/logo.png');
 	margin: auto;
 	margin-bottom: 350px;
 }
@@ -398,7 +401,6 @@ nav a:hover {
 .story_header_left {
 	width: 763px;
 	height: 78px;
-	background-image: url('/images/story_header_left.png');
 	position: absolute;
 	bottom: 0;
 }
@@ -406,7 +408,6 @@ nav a:hover {
 .story_header_right {
 	width: 550px;
 	height: 52px;
-	background-image: url('/images/story_header_right.png');
 	position: absolute;
 	right: 0;
 }
@@ -420,10 +421,6 @@ nav a:hover {
 	height: 262px;
 	margin-bottom: 30px;
 }
-.story_content_1 {background-image: url('/images/story_content_1.png');}
-.story_content_2 {background-image: url('/images/story_content_2.png');}
-.story_content_3 {background-image: url('/images/story_content_3.png');}
-.story_content_4 {background-image: url('/images/story_content_4.png');}
 
 #character {
 	width: 1280px;
@@ -439,14 +436,12 @@ nav a:hover {
 .char_header_left {
 	width: 658px;
 	height: 54px;
-	background-image: url('/images/char_header_left.png');
 	position: absolute;
 }
 
 .char_header_right {
 	width: 655px;
 	height: 76px;
-	background-image: url('/images/char_header_right.png');
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -505,7 +500,6 @@ nav a:hover {
 .system_header_left {
 	width: 763px;
 	height: 78px;
-	background-image: url('/images/system_header_left.png');
 	position: absolute;
 	bottom: 0;
 }
@@ -513,7 +507,6 @@ nav a:hover {
 .system_header_right {
 	width: 550px;
 	height: 52px;
-	background-image: url('/images/system_header_right.png');
 	position: absolute;
 	right: 0;
 }
@@ -617,6 +610,10 @@ footer {
 	width: 100%;
 	position: relative;
 	padding-top: 400px;
+}
+
+footer p {
+	margin: 1em;
 }
 
 .footer_main {
@@ -731,10 +728,6 @@ footer {
 	left: 150px;
 }
 
-.voice_btn_1 {background-image: url('/images/voice_btn_1.png');}
-.voice_btn_2 {background-image: url('/images/voice_btn_2.png');}
-.voice_btn_3 {background-image: url('/images/voice_btn_3.png');}
-
 .voice_btn_1, .voice_btn_2, .voice_btn_3 {
 	width: 111px;
 	height: 38px;
@@ -792,7 +785,6 @@ footer {
 	height: 655px;
 	background-image: url('/images/chars/char_3.png');
 	left: 50%;
-	/*margin-left: -250px;*/
 	margin-left: -280px;
 	top: 70px;
 }

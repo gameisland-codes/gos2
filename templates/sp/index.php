@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>GOS2</title>
+	<title>GOS2|ガンズオブソウル2（Guns of Soul2）公式サイト</title>
 
 	<?php
 		include(__DIR__ . '/../vendor/meta.php');
@@ -10,26 +10,25 @@
 	?>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?<?php echo time();?>">
-	<!-- <link rel="stylesheet" type="text/css" href="/css/sp/main.css?1905"> -->
+	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?190515">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="/js/scrollreveal.min.js"></script>
 	<script src="/js/howler.min.js"></script>
 	<script src="/js/layer.js"></script>
-	<script src="/js/sp/main.js?1905"></script>
+	<script src="/js/sp/main.js?190515"></script>
 </head>
 <body>
 	<div class="fixed_bg"></div>
 	<div class="wrapper">
 		<div class="top">
-			<div class="top_bg">
+			<div class="top_bg" title="GOS2|ガンズオブソウル2（Guns of Soul2）">
 				<div class="top_char_1"></div>
 				<div class="top_char_2"></div>
 				<div class="top_char_3"></div>
 				<div class="top_char_4"></div>
 				<div class="top_char_5"></div>
-				<div class="logo"></div>
+				<div class="logo" title="GOS2|ガンズオブソウル2（Guns of Soul2）"></div>
 				<div class="top_upper_frame"></div>
 				<div class="top_lower_frame"></div>
 				<div class="top_shadow"></div>
@@ -43,13 +42,13 @@
 		<div class="contents_wrapper">
 			<div class="banner_area">
 				<div class="banners">
-					<img src="/images/preregister_cp_banner.jpg">
+					<img src="/images/preregister_cp_banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）事前登録">
 				</div>
 				<div class="banner_frame"></div>
 			</div>
 			<div id="news">
 				<div class="news_wrapper">
-					<div class="news_list">
+					<div class="news_list" title="GOS2|ガンズオブソウル2（Guns of Soul2）ニュース">
 
 						<!-- <iframe src="//cms.gameisland.co.jp/gos2/official/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no"></iframe> -->
 						<!-- <iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/top_news_v2.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe> -->
@@ -186,30 +185,30 @@
 
 						<a href="/news" target="_blank" class="news_more_btn"></a>
 					</div>
-					<div class="twitter_timeline">
+					<div class="twitter_timeline" title="GOS2|ガンズオブソウル2（Guns of Soul2）公式Twitter">
 						<div class="timeline_area">
-							<a class="twitter-timeline" href="https://twitter.com/gunsofsoul2" data-height="380px" height="380px" data-width="450px" width="450px" data-chrome="nofooter,noborders" data-lang="ja">@gunsofsoul2</a>
+							<a class="twitter-timeline" href="https://twitter.com/gunsofsoul2" data-height="380px" height="380px" data-width="450px" width="450px" data-chrome="nofooter,noborders" data-lang="ja">GOS2|ガンズオブソウル2（Guns of Soul2）公式Twitter@gunsofsoul2</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="story">
-				<div class="story_header">
-					<div class="story_header_left"></div>
-					<div class="story_header_right"></div>
-				</div>
+				<h2 class="story_header">
+					<img class="story_header_left" src="/images/sp/story_header_left.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）ストーリー">
+					<img class="story_header_right" src="/images/sp/story_header_right.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）ストーリー">
+				</h2>
 				<div class="story_contents">
-					<div class="story_content_1"></div>
-					<div class="story_content_2"></div>
-					<div class="story_content_3"></div>
-					<div class="story_content_4"></div>
+					<img class="story_content_1" src="/images/sp/story_content_1.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）ストーリー">
+					<img class="story_content_2" src="/images/sp/story_content_2.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）ストーリー">
+					<img class="story_content_3" src="/images/sp/story_content_3.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）ストーリー">
+					<img class="story_content_4" src="/images/sp/story_content_4.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）ストーリー">
 				</div>
 			</div>
 			<div id="character">
-				<div class="char_header">
-					<div class="char_header_left"></div>
-					<div class="char_header_right"></div>
-				</div>
+				<h2 class="char_header">
+					<img class="char_header_left" src="/images/sp/char_header_left.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）キャラクター">
+					<img class="char_header_right" src="/images/sp/char_header_right.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）キャラクター">
+				</h2>
 				<div class="char_bg"></div>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -220,10 +219,10 @@
 				</div>
 			</div>
 			<div id="system">
-				<div class="system_header">
-					<div class="system_header_left"></div>
-					<div class="system_header_right"></div>
-				</div>
+				<h2 class="system_header">
+					<img class="system_header_left" src="/images/sp/system_header_left.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）システム">
+					<img class="system_header_right" src="/images/sp/system_header_right.png" alt="GOS2|ガンズオブソウル2（Guns of Soul2）システム">
+				</h2>
 				<div class="system_contents">
 					<div class="system_frame"></div>
 					<div class="system_char"></div>
@@ -273,5 +272,7 @@
 		});
 	});
 	</script>
+
+	<?php include(__DIR__ . '/../adTag/index.php'); ?>
 </body>
 </html>
