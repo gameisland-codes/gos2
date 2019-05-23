@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta NAME=”ROBOTS” CONTENT=”NONE”>
-	<title>GOS2 | ニュース</title>
+	<title>GOS2|ガンズオブソウル2（Guns of Soul2）ニュース</title>
 	<link rel="stylesheet" type="text/css" href="/css/news.css">
 </head>
 <body>
