@@ -10,7 +10,8 @@
 	?>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?1905">
+	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?<?php echo time();?>">
+	<!-- <link rel="stylesheet" type="text/css" href="/css/sp/main.css?1905"> -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="/js/scrollreveal.min.js"></script>
@@ -49,7 +50,141 @@
 			<div id="news">
 				<div class="news_wrapper">
 					<div class="news_list">
-						<iframe src="//cms.gameisland.co.jp/gos2/official/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+
+						<!-- <iframe src="//cms.gameisland.co.jp/gos2/official/top_news_list.html" allowtransparency="true" frameborder="0" scrolling="no"></iframe> -->
+						<!-- <iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/top_news_v2.html" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 665px;width: 505px;"></iframe> -->
+						<!-------------------------------------------------------------->
+						<div class="news_tabs">
+						  <div class="news_tab_all active" onclick="javascript:tabSwitch('all');"></div>
+						  <div class="news_tab_notice" onclick="javascript:tabSwitch('notice');"></div>
+						  <div class="news_tab_event" onclick="javascript:tabSwitch('event');"></div>
+						  <div class="news_tab_update" onclick="javascript:tabSwitch('update');"></div>
+						  <div class="news_tab_maintenance" onclick="javascript:tabSwitch('maintenance');"></div>
+						</div>
+						<div class="news_list_wrapper" id="all" name="all">
+
+						  <div class="news_item">
+						    <div class="news_notice_label"></div>
+						    <div class="news_content">
+						      <a href="https://www.gos2.jp/news/2019-05-post-1.html" target="_blank">ランダムアイテム出現確率</a>
+						    </div>
+						    <div class="news_date">2019.05.07</div>
+						  </div>
+
+						  <div class="news_item">
+						    <div class="news_event_label"></div>
+						    <div class="news_content">
+						      <a href="https://www.gos2.jp/news/2019-04-twitter2.html" target="_blank">Twitterキャンペーン第2弾</a>
+						    </div>
+						    <div class="news_date">2019.04.23</div>
+						  </div>
+
+						  <div class="news_item">
+						    <div class="news_event_label"></div>
+						    <div class="news_content">
+						      <a href="https://www.gos2.jp/news/2019-04-twitter1.html" target="_blank">Twitterキャンペーン第1弾</a>
+						    </div>
+						    <div class="news_date">2019.04.15</div>
+						  </div>
+
+						  <div class="news_item">
+						    <div class="news_event_label"></div>
+						    <div class="news_content">
+						      <a href="https://www.gos2.jp/news/2019-04-post.html" target="_blank">事前登録を開始しました</a>
+						    </div>
+						    <div class="news_date">2019.04.15</div>
+						  </div>
+
+						  <div class="news_item">
+						    <div class="news_notice_label"></div>
+						    <div class="news_content">
+						      <a href="https://www.gos2.jp/news/2019-04-guns-of-soul2-2-open.html" target="_blank">公式サイトをOPENしました</a>
+						    </div>
+						    <div class="news_date">2019.04.15</div>
+						  </div>
+
+						</div>
+
+						<div class="news_list_wrapper" style="display: none;" id="notice" name="notice">
+
+						    <div class="news_item">
+						      <div class="news_notice_label"></div>
+						      <div class="news_content">
+						        <a href="https://www.gos2.jp/news/2019-05-post-1.html" target="_blank">ランダムアイテム出現確率</a>
+						      </div>
+						      <div class="news_date">2019.05.07</div>
+						    </div>
+
+						    <div class="news_item">
+						      <div class="news_notice_label"></div>
+						      <div class="news_content">
+						        <a href="https://www.gos2.jp/news/2019-04-guns-of-soul2-2-open.html" target="_blank">公式サイトをOPENしました</a>
+						      </div>
+						      <div class="news_date">2019.04.15</div>
+						    </div>
+
+						</div>
+
+						<div class="news_list_wrapper" style="display: none;" id="event" name="event">
+
+						    <div class="news_item">
+						      <div class="news_event_label"></div>
+						      <div class="news_content">
+						        <a href="https://www.gos2.jp/news/2019-04-twitter2.html" target="_blank">Twitterキャンペーン第2弾</a>
+						      </div>
+						      <div class="news_date">2019.04.23</div>
+						    </div>
+
+						    <div class="news_item">
+						      <div class="news_event_label"></div>
+						      <div class="news_content">
+						        <a href="https://www.gos2.jp/news/2019-04-twitter1.html" target="_blank">Twitterキャンペーン第1弾</a>
+						      </div>
+						      <div class="news_date">2019.04.15</div>
+						    </div>
+
+						    <div class="news_item">
+						      <div class="news_event_label"></div>
+						      <div class="news_content">
+						        <a href="https://www.gos2.jp/news/2019-04-post.html" target="_blank">事前登録を開始しました</a>
+						      </div>
+						      <div class="news_date">2019.04.15</div>
+						    </div>
+
+						</div>
+
+						<div class="news_list_wrapper" style="display: none;" id="update" name="update">
+
+						</div>
+
+						<div class="news_list_wrapper" style="display: none;" id="maintenance" name="maintenance">
+
+						</div>
+
+						<script language="JavaScript">
+						  function tabSwitch(_tabName) {
+							  var _tabs = document.getElementsByClassName("news_tabs")[0].children;
+							  var _currentTab = document.getElementsByClassName('news_tab_' + _tabName)[0];
+							  var _newsWrapper = document.getElementsByClassName('news_list_wrapper');
+							  var i;
+
+							  for (i = 0; i < _tabs.length; i++) {
+							    _tabs[i].classList.remove("active");
+						    }
+
+							  _currentTab.classList.add("active");
+
+							  for (i = 0; i < _newsWrapper.length; i++) {
+							    _newsWrapper[i].style.display = 'none';
+							  }
+
+							  document.getElementById(_tabName).style.display = '';
+
+						  }
+						</script>
+						<!-------------------------------------------------------------->
+
+						<a href="/news" target="_blank" class="news_more_btn"></a>
 					</div>
 					<div class="twitter_timeline">
 						<div class="timeline_area">
