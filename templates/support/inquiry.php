@@ -27,17 +27,8 @@
 				</div>
 
 			<?php else: ?>
-
-				<?php //if($platform == 'dmm'): ?>
-				
-				<!-- <form action="/dmg/inquire" method="post" enctype="multipart/form-data"> -->
-				
-				<?php //else: ?>
 				
 				<form action="/inquire" method="post" enctype="multipart/form-data">
-				
-				<?php //endif; ?>
-
 					<p>下記項目を記載の上、「確認」のボタンを押してください。<span class="text_red">※必須項目です。</span></p>
 					<div>
 						<p>●ユーザーID <span class="text_red">※</span></p>
