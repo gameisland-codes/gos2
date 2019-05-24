@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>事前登録キャンペーン</title>
+	<title>GOS2|ガンズオブソウル2（Guns of Soul2）事前登録キャンペーン</title>
 
-	<link rel="stylesheet" type="text/css" href="/css/other/preregister_cp.css">
+	<link rel="stylesheet" type="text/css" href="/css/other/preregister_cp.css?1905">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-	<?php
+	<?php 
 		if (PLATFORM == 'dmm') {
 			include(__DIR__ . '/../adTag/dmm_gtm.php');
 			include(__DIR__ . '/../vendor/dmm_nav.php');
@@ -133,6 +133,12 @@
 
 			function openPreregister () {
 				openPreregisterModal();
+			}
+
+		<?php elseif(DEVICE == 'sp'): ?>
+
+			function openPreregister () {
+				window.open('/preregister/input', '_blank');
 			}
 
 		<?php else: ?>

@@ -14,7 +14,7 @@ if (preg_match('/iPhone|iPod|iPad|Android/ui', $_SERVER['HTTP_USER_AGENT'])) {
 */ /////////////////////
 
 if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' ) {
-// if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'n.test.gos2.jp' ) {
+// if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'n.test.gos2.jp' || $host == 'sp.test.gos2.jp' ) {
 	define('PLATFORM', 'official');
 
 	$app->get('/',function($request, $response){
@@ -30,6 +30,9 @@ if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' ) {
 		}
 		*/
 
+		if (DEVICE == 'sp') {
+			return $this->renderer->render($response, 'sp/index.php', $data);
+		}
 		return $this->renderer->render($response, 'index.php', $data);
 	});
 
@@ -70,7 +73,7 @@ if ( $host == 'dmg.gos2.jp' ) {
 
 /* /////////////////////
 
-	Ohter Route
+	Other Route
 
 */ /////////////////////
 
@@ -79,7 +82,13 @@ $app->get('/preregister_cp',function($request, $response) {
 });
 
 $app->get('/news[/{article}]',function($request, $response, $args) {
-	return $this->renderer->render($response, 'news/'.(empty($args) ? 'list' : 'article').'.php', [
+	$root = '';
+
+	if (DEVICE == 'sp') {
+		$root = 'sp/';
+	}
+
+	return $this->renderer->render($response, $root.'news/'.(empty($args) ? 'list' : 'article').'.php', [
 		'article' => isset($args['article']) ? $args['article'] : '',
 	]);
 });
