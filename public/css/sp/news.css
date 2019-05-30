@@ -298,14 +298,14 @@ footer a, footer a:link, footer a:visited, footer a:hover, footer a:active {
 }
 
 h1 {
-	font-size: .8rem;
+	font-size: .8rem !important;
 }
 h2 {
-	font-size: .5rem;
+	font-size: .5rem !important;
 }
 
-.article_body p {
-	font-size: .5rem;
+.article_body p, .article_body span, .article_body a {
+	font-size: .5rem !important;
 }
 
 .article_body img {
