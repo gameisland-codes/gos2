@@ -9,7 +9,7 @@
 <body>
 	<div class="wrapper">
 		<img src="/images/title_news.png" width="100%">
-		<iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/<?php echo $article; ?>" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 1522px;width: 1280px;"></iframe>
+		<iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/<?php echo $article; ?>" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 1425px;width: 1280px;"></iframe>
 	</div>
 	<?php include(__DIR__ . '/../vendor/footer.php') ?>
 </body>
