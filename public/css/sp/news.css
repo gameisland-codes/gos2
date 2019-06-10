@@ -38,10 +38,10 @@ p {
 .main_contents, .main_contents_article {
 	/* 900 x 1692 */
 	width: 100vw;
-	height: calc(1692/900*100vw);
+	height: calc(1350/900*100vw);
 	background-image: url('/images/sp/news_bg.png');
 	background-repeat: no-repeat;
-	background-size: 100vw calc(1692/900*100vw);
+	background-size: 100vw calc(1515/900*100vw);
 }
 
 .main_contents_wrapper {
@@ -59,6 +59,10 @@ p {
 	width: calc(19*5vw);
 	font-size: 0;
 	margin: auto;
+}
+
+.tab_frame p {
+	font-size: 0.6rem !important;
 }
 
 .tab_frame {
@@ -122,18 +126,16 @@ p {
 	margin: auto;
 	position: relative;
 	margin-top: 5vw;
+	padding-top: 7vw;
 }
 
 /* ------------------------------------------------------------------------ List */
 
-.article_lines {
-	
-}
-
 .news_list {
 	width: 68vw;
 	margin: auto;
-	padding-top: 7vw;
+	height: 106vw;
+    overflow-y: scroll;
 }
 
 .news_item {
@@ -146,6 +148,7 @@ p {
 	margin-top: .5rem;
 	overflow: hidden;
 	font-size: .8rem;
+	line-height: 1rem;
 }
 
 .news_date {
@@ -213,10 +216,12 @@ p {
 	height: 80%;
 	margin: auto;
 	padding-top: 6vw;
+	overflow-y: scroll;
 }
 
 .article_body {
 	font-size: 1rem;
+	line-height: 1.2rem;
 }
 
 .article_underline {
@@ -252,7 +257,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: 100vw calc(485/874*100vw);
 	position: absolute;
-	bottom: 12vw;
+	bottom: -14vw;
 	left: 50%;
 	margin-left: -50vw;
 }
@@ -264,6 +269,11 @@ footer {
 	position: relative;
 }
 
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active {
+	color: white !important;
+	text-decoration: underline !important;
+}
+
 .footer_texts {
 	background-color: #10243C;
 	width: 100%;
@@ -272,7 +282,7 @@ footer {
 }
 
 .footer_links {
-	font-size: .8rem;
+	font-size: .5rem;
 	text-align: center;
 	position: relative;
 	z-index: 2;
@@ -281,9 +291,25 @@ footer {
 }
 
 .copyright_area {
-	font-size: .8rem;
+	font-size: .5rem;
 	padding-top: 15px;
 	height: 50px;
 	margin: auto;
 	text-align: center;
+}
+
+h1 {
+	font-size: .8rem !important;
+}
+h2 {
+	font-size: .5rem !important;
+}
+
+.article_body p, .article_body span, .article_body a {
+	font-size: .5rem !important;
+}
+
+.article_body img {
+	width: 100%;
+	object-fit: scale-down;
 }

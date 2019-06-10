@@ -235,6 +235,11 @@ footer {
 	min-width: 1280px;
 }
 
+footer a,a:link,a:visited,a:hover,a:active {
+	color: white !important;
+	text-decoration: underline !important;
+}
+
 .footer_texts {
 	background-color: #10243C;
 	width: 100%;

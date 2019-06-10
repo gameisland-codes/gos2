@@ -13,7 +13,7 @@ if (preg_match('/iPhone|iPod|iPad|Android/ui', $_SERVER['HTTP_USER_AGENT'])) {
 
 */ /////////////////////
 
-if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' ) {
+if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'gos2.test.gameisland.co.jp' ) {
 // if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'n.test.gos2.jp' || $host == 'sp.test.gos2.jp' ) {
 	define('PLATFORM', 'official');
 
@@ -107,6 +107,14 @@ $app->get('/commerce',function($request, $response){
 
 $app->get('/help',function($request, $response){
 	return $this->renderer->render($response, 'support/inquiry.php', ['sent' => false, 'error' => false]);
+});
+
+$app->get('/guide',function($request, $response){
+    return $this->renderer->render($response, 'support/guide.php', ['sent' => false, 'error' => false]);
+});
+    
+$app->get('/information',function($request, $response){
+    return $this->renderer->render($response, 'support/information.php', ['sent' => false, 'error' => false]);
 });
 
 $app->post('/inquire','FuncController:inquire');
