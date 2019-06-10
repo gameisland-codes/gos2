@@ -10,14 +10,13 @@
 	?>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?<?php echo time() ?>">
-	<!-- <link rel="stylesheet" type="text/css" href="/css/sp/main.css?190515"> -->
+	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?1906">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="/js/scrollreveal.min.js"></script>
 	<script src="/js/howler.min.js"></script>
 	<script src="/js/layer.js"></script>
-	<script src="/js/sp/main.js?190515"></script>
+	<script src="/js/sp/main.js?1906"></script>
 </head>
 <body>
 	<div class="fixed_bg"></div>
