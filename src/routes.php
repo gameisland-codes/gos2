@@ -46,8 +46,8 @@ if ( $host == 'gos2.jp' || $host == 'www.gos2.jp' || $host == 'gos2.test.gameisl
 
 */ /////////////////////
 
-if ( $host == 'dmg.gos2.jp' ) {
-// if ( $host == 'dmg.gos2.jp' || $host == 'dmg.test.gos2.jp' ) {
+// if ( $host == 'dmg.gos2.jp' ) {
+if ( $host == 'dmg.gos2.jp' || $host == 'dmg.test.gos2.jp' ) {
 	define('PLATFORM', 'dmm');
 
 	$app->get('/',function($request, $response){

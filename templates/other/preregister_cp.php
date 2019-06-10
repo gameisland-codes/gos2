@@ -68,23 +68,13 @@
 
 			<?php if (PLATFORM == 'dmm'): ?>
 
-				<div class="dmm_checkbox_area">
-					<div class="dmm_checkbox_wrapper">
-						<input type="checkbox" id="preRegPram1" name="preRegPram1" value="1" checked="checked">お知らせを受け取る
-						<input type="checkbox" id="preRegPram2" name="preRegPram2" value="1" checked="checked">プロフィール等に表示する
-					</div>
-				</div>
-				<div class="preregister_btn_top"></div>
 				<div class="cp_contents_1"></div>
 				<div class="cp_contents_dmm"></div>
-				<div class="preregister_btn"></div>
 
 			<?php else: ?>
 
-				<div class="preregister_btn_top"></div>
 				<div class="cp_contents_1"></div>
 				<div class="cp_contents_2"></div>
-				<div class="preregister_btn"></div>
 
 			<?php endif; ?>
 
@@ -128,35 +118,6 @@
 				frictionY: .15,
 			});
 		}
-
-		<?php if (PLATFORM == 'dmm'): ?>
-
-			function openPreregister () {
-				openPreregisterModal();
-			}
-
-		<?php elseif(DEVICE == 'sp'): ?>
-
-			function openPreregister () {
-				window.open('/preregister/input', '_blank');
-			}
-
-		<?php else: ?>
-
-			function openPreregister () {
-				layer.closeAll();
-				layer.open({
-					type: 2,
-					title: false,
-					skin: 'layui-layer-none',
-					area: ['800px', '600px'],
-					closeBtn: true,
-					shadeClose: false,
-					content: '/preregister/input',
-				});
-			}
-
-		<?php endif; ?>
 	</script>
 </body>
 </html>
