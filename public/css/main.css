@@ -118,7 +118,6 @@ nav a:hover {
 	width: 413px;
 	height: 194px;
 	margin: auto;
-	margin-bottom: 350px;
 }
 
 .preregister_btn {
@@ -131,6 +130,50 @@ nav a:hover {
 
 .preregister_btn:hover {
 	background-image: url('/images/preregister_btn_on.png');
+}
+
+.game_start_btn {
+	width: 346px;
+	height: 99px;
+	background-image: url('/images/game_start_btn_off.png');
+	cursor: pointer;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -173px;
+}
+
+.game_start_btn:hover {
+	background-image: url('/images/game_start_btn_on.png');
+}
+
+.bottom_game_start_btn {
+	position: relative;
+	width: 1280px;
+	height: 200px;
+}
+
+.download_btns {
+	margin: auto;
+	margin-top: 167px;
+	width: 600px;
+}
+
+.app_store_btn {
+	width: 237px;
+	height: 71px;
+	background-image: url('/images/app_store_btn.png');
+	cursor: pointer;
+	display: inline-block;
+}
+
+.google_play_btn {
+	width: 237px;
+	height: 71px;
+	background-image: url('/images/google_play_btn.png');
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 120px;
 }
 
 /*-------------------------------------------------*/

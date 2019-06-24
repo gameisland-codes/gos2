@@ -7,6 +7,9 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+
+	<?php if(PLATFORM == 'dmm') { include(__DIR__ . '/../adTag/dmm_gtm.php'); } ?>
+
 	<div class="wrapper">
 		<img src="/images/title_news.png" width="100%">
 		<iframe src="//cms.gameisland.co.jp/gos2/<?php echo PLATFORM; ?>/<?php echo $article; ?>" allowtransparency="true" frameborder="0" scrolling="no" style="display: block;height: 1425px;width: 1280px;"></iframe>

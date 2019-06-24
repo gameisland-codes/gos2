@@ -4,10 +4,14 @@
   <meta NAME=”ROBOTS” CONTENT=”NONE”>
   <title>GOS2</title>
   <link rel="stylesheet" type="text/css" href="/css/support.css">
+  <link rel="stylesheet" type="text/css" href="/css/dmm_nav.css">
 </head>
 <body>
 
-<?php include(__DIR__ . '/../adTag/dmm_gtm.php'); ?>
+<?php
+  include(__DIR__ . '/../adTag/dmm_gtm.php');
+  include(__DIR__ . '/../vendor/dmm_nav.php');
+?>
 
 <div class="wrapper">
   <div>

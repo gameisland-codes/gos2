@@ -10,13 +10,13 @@
 	?>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?190515">
+	<link rel="stylesheet" type="text/css" href="/css/sp/main.css?1906">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="/js/scrollreveal.min.js"></script>
 	<script src="/js/howler.min.js"></script>
 	<script src="/js/layer.js"></script>
-	<script src="/js/sp/main.js?190515"></script>
+	<script src="/js/sp/main.js?1906"></script>
 </head>
 <body>
 	<div class="fixed_bg"></div>
@@ -36,7 +36,10 @@
 				<div class="movie_frame">
 					<div class="movie_play_btn"></div>
 				</div>
-				<div class="preregister_btn"></div>
+				<div class="download_btns">
+					<a href="https://itunes.apple.com/jp/app/id1453626249" target="_blank" class="app_store_btn"></a>
+					<a href="https://play.google.com/store/apps/details?id=jp.gos2.gunsofsoul2" target="_blank" class="google_play_btn"></a>
+				</div>
 			</div>
 		</div>
 		<div class="contents_wrapper">

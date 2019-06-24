@@ -70,8 +70,6 @@ a,a:link,a:visited,a:hover,a:active {
 
 .chars_frame {
 	width: 1280px;
-	/*height: 1061px;*/
-	height: 1440px;
 	position: absolute;
 	top: 317px;
 	left: 50%;

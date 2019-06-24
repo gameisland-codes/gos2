@@ -65,6 +65,10 @@ if ( $host == 'dmg.gos2.jp' ) {
 	$app->get('/preregister/error', function($request, $response){
 		return $this->renderer->render($response, 'preregister/errorDmm.php');
 	});
+
+	$app->get('/gamestart', function($request, $response){
+		return $this->renderer->render($response, 'game/dmm_start_modal.php');
+	});
 }
 
 /* /////////////////////

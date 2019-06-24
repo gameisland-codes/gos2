@@ -222,6 +222,36 @@ a,a:link,a:visited,a:hover,a:active {
 	top: 0;
 }
 
+.download_btns {
+	margin: auto;
+	position: relative;
+	margin-top: 95vw;
+	width: 85vw;
+}
+
+.app_store_btn {
+	/* 237 x 71 */
+	width: 40vw;
+	height: calc(71/237*40vw);
+	background-image: url('/images/app_store_btn.png');
+	background-repeat: no-repeat;
+	background-size: 40vw calc(71/237*40vw);
+	cursor: pointer;
+	display: inline-block;
+}
+
+.google_play_btn {
+	/* 237 x 71 */
+	width: 40vw;
+	height: calc(71/237*40vw);
+	background-image: url('/images/google_play_btn.png');
+	background-repeat: no-repeat;
+	background-size: 40vw calc(71/237*40vw);
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 2vw;
+}
+
 /*-------------------------------------------------*/
 
 .contents_wrapper {

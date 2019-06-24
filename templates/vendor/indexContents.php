@@ -24,16 +24,17 @@
 
 					<?php if (PLATFORM == 'dmm'): ?>
 
-						<div class="dmm_checkbox_area">
-							<div class="dmm_checkbox_wrapper">
-								<input type="checkbox" id="preRegPram1" name="preRegPram1" value="1" checked="checked">お知らせを受け取る
-								<input type="checkbox" id="preRegPram2" name="preRegPram2" value="1" checked="checked">プロフィール等に表示する
-							</div>
+						<div class="game_start_btn"></div>
+
+					<?php else: ?>
+
+						<div class="download_btns">
+							<a href="https://itunes.apple.com/jp/app/id1453626249" target="_blank" class="app_store_btn"></a>
+							<a href="https://play.google.com/store/apps/details?id=jp.gos2.gunsofsoul2" target="_blank" class="google_play_btn"></a>
 						</div>
 
 					<?php endif; ?>
 
-					<div class="preregister_btn"></div>
 				</div>
 			</div>
 		</div>
@@ -131,5 +132,13 @@
 						<div class="system_right_btn"></div>
 					</div>
 				</div>
+
+				<?php if(PLATFORM == 'dmm'): ?>
+
+					<div class="bottom_game_start_btn">
+						<div class="game_start_btn"></div>
+					</div>
+
+				<?php endif; ?>
 			</div>
 		</div>
