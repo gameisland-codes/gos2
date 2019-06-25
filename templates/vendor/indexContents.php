@@ -44,7 +44,7 @@
 
 					<?php if(PLATFORM == 'dmm'): ?>
 
-						<img src="/images/preregister_cp_banner_dmm.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）事前登録">
+						<img src="/images/dmm_banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）事前登録">
 
 					<?php else: ?>
 
