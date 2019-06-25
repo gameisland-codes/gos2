@@ -54,7 +54,11 @@
 
 				</div>
 				<div class="banner_frame"></div>
+				<?php if(PLATFORM == 'dmm'): ?>
 				<div class="banner_clicker_dmm" onclick="javascript:window.open('https://dmg.gos2.jp/news/2019-06-post-3.html', '_blank');"></div>
+				<?php else: ?>
+				<div class="banner_clicker"></div>
+				<?php endif; ?>
 			</div>
 			<div class="movie_area">
 				<div class="movie_wrapper">
