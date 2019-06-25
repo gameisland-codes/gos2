@@ -22,7 +22,7 @@
             <li>
                 <p>未インストールの方</p>
                 <!-- <a href="http://dl-gameplayer.dmm.com/admin/installer/622695/win/DMMGamePlayerSetup.exe" target="_blank" class="btn btn-install"><span>DMM GAME PLAYER<br>インストール(Windows版)</span></a> -->
-                <a href="http://dl-gameplayer.dmm.com/admin/win/installer/DMMGamePlayerSetup.exe" target="_blank" class="btn btn-install"><span>DMM GAME PLAYER<br>インストール(Windows版)</span></a>
+                <a href="http://dl-gameplayer.dmm.com/admin/installer/gos2/win/DMMGamePlayerSetup.exe" target="_blank" class="btn btn-install"><span>DMM GAME PLAYER<br>インストール(Windows版)</span></a>
                 </ul>
             </li>
         </ul>
