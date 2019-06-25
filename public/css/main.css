@@ -188,7 +188,7 @@ nav a:hover {
 	width: 1280px;
 }
 
-.banners, .banner_clicker {
+.banners, .banner_clicker, .banner_clicker_dmm {
 	width: 898px;
 	height: 300px;
 	position: absolute;
@@ -201,7 +201,7 @@ nav a:hover {
 	z-index: 1;
 }
 
-.banner_clicker {
+.banner_clicker, .banner_clicker_dmm {
 	z-index: 100;
 	cursor: pointer;
 }

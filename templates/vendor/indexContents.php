@@ -54,7 +54,7 @@
 
 				</div>
 				<div class="banner_frame"></div>
-				<div class="banner_clicker"></div>
+				<div class="banner_clicker_dmm" onclick="javascript:window.open('https://dmg.gos2.jp/news/2019-06-post-3.html', '_blank');"></div>
 			</div>
 			<div class="movie_area">
 				<div class="movie_wrapper">
