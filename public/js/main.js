@@ -208,7 +208,7 @@ function openPreregisterModal () {
 }
 
 function playYoutubeWindow(){
-	var yId='7doi8tRnI9k';
+	var yId='wklyHEllIis';
 	layer.closeAll();
 	layer.open({
 		type: 2,

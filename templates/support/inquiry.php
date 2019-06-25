@@ -56,7 +56,7 @@
 							<option value="ログインについて">ログインについて</option>
 							<option value="不具合報告">不具合報告</option>
 							<option value="課金エラー報告">課金エラー報告</option>
-							<option value="アイテム消失">課金エラー報告</option>
+							<option value="アイテム消失">アイテム消失</option>
 							<option value="イベントについて">イベントについて</option>
 							<option value="機種変・データ引継ぎ">機種変・データ引継ぎ</option>
 							<option value="迷惑ユーザー通報">迷惑ユーザー通報</option>
