@@ -44,11 +44,11 @@
 
 					<?php if(PLATFORM == 'dmm'): ?>
 
-						<img src="/images/dmm_banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）">
+						<img src="/images/banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）">
 
 					<?php else: ?>
 
-						<img src="/images/dmm_banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）">
+						<img src="/images/banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）">
 
 					<?php endif; ?>
 
