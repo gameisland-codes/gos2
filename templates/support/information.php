@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<img src="/images/title_gameguide.png" width="100%">
+		<img src="/images/title_information.png" width="100%">
 		<div style="padding: 10px;">
 <?php echo(file_get_contents('http://cms.gameisland.co.jp/gos2/' . PLATFORM . '/information.html')); ?>
 		</div>

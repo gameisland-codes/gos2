@@ -45,7 +45,7 @@
 		<div class="contents_wrapper">
 			<div class="banner_area">
 				<div class="banners">
-					<img src="/images/preregister_cp_banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2）事前登録">
+					<img src="/images/banner.jpg" alt="GOS2|ガンズオブソウル2（Guns of Soul2)">
 				</div>
 				<div class="banner_frame"></div>
 			</div>

@@ -13,9 +13,9 @@
 			<p>
 				<a href="/help" target="_blank">お問い合わせ</a>
 				&nbsp;|&nbsp;
-				<a href="/guide" target="_blank">ゲイムガイド</a>
+				<a href="/guide" target="_blank">ゲームガイド</a>
 				&nbsp;|&nbsp;
-				<a href="/information" target="_blank">インフォメーシュン</a>
+				<a href="/information" target="_blank">インフォメーション</a>
 			</p>
 
 		</div>
