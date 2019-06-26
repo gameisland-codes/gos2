@@ -189,7 +189,7 @@ function btnController(){
 	$('.system_right_btn').on('click',slideSystemCard);
 
 	$('.banner_frame').on('click',function(){
-		window.open('/preregister_cp', '_blank');
+		window.open('https://www.gos2.jp/news/2019-06-post-3.html', '_blank');
 	});
 
 	$('.menu_btn').on('click',function(){
@@ -199,22 +199,6 @@ function btnController(){
 	$('.menu_close_btn, .menu_selector_bg').on('click',function(){
 		$('.menu_modal').hide();
 	});
-}
-
-function openPreregisterModal () {
-	window.open('/preregister/input', '_blank');
-	/*
-	layer.closeAll();
-	layer.open({
-		type: 2,
-		title: false,
-		skin: 'layui-layer-none',
-		area: ['90%', '80%'],
-		closeBtn: true,
-		shadeClose: false,
-		content: '/preregister/input',
-	});
-	*/
 }
 
 function playYoutubeWindow(){
