@@ -133,4 +133,4 @@
     <?php endif; ?>
   </div>
 </div>
-<?php echo file_get_contents('http://cms.gameisland.co.jp/gos2/official/top_banner_slider.html');?>
+<?php echo file_get_contents('http://cms.gameisland.co.jp/gos2/' . PLATFORM . '/top_banner_slider.html');?>
