@@ -188,10 +188,6 @@ function btnController(){
 
 	$('.system_left_btn').on('click',slideSystemCard);
 	$('.system_right_btn').on('click',slideSystemCard);
-
-	$('.banner_clicker').on('click',function(){
-		window.open('https://www.gos2.jp/news/2019-06-post-3.html', '_blank');
-	});
 }
 
 function openPreregisterModal () {
