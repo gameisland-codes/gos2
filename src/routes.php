@@ -104,6 +104,9 @@ $app->get('/about',function($request, $response){
 $app->get('/commerce',function($request, $response){
 	return $this->renderer->render($response, 'support/law.php');
 });
+$app->get('/commerce-2',function($request, $response){
+    return $this->renderer->render($response, 'support/law2.php');
+});
 
 $app->get('/help',function($request, $response){
 	return $this->renderer->render($response, 'support/inquiry.php', ['sent' => false, 'error' => false]);

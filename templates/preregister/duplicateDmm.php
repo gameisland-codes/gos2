@@ -31,6 +31,8 @@
         &nbsp;|&nbsp;
         <a href="/commerce" target="_blank">特定商取引法に基づく表示</a>
         &nbsp;|&nbsp;
+        <a href="/commerce-2" target="_blank">資金決済法に基づく表示</a>
+        &nbsp;|&nbsp;
         <a href="/privacy" target="_blank">プライバシーポリシー</a>
       </p>
       <p><a href="/help" target="_blank">お問い合わせ</a></p>
