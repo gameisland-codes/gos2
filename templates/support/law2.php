@@ -31,7 +31,7 @@
             <p>有効期限はありません。</p>
             <br/>
             <p>■お問い合わせは下記のアドレスまでお願い致します</p>
-            <p>e-mail :identityv-jp@service.netease.com</p>
+            <p>e-mail :support@gos2.jp</p>
             <br/>
             <p>■ご利用上の注意</p>
             <p>・ゲーム内通貨の表示価格は、税込価格となっております。</p>
